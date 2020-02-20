@@ -9,8 +9,7 @@ import Home from "./home"
 const IndexPage = () => (
   <Layout>
     <Home name="HOME"/>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;

@@ -2,10 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-const SecondPage = () => (
+
+const NYU = () => (
   <Layout>
-      <Link to="/">Page 1</Link>
+      <h1>NYU</h1>
+      <h2>Computer Science</h2>
+      <Link to="/">Home</Link>
   </Layout>
 )
 
-export default SecondPage;
+export default NYU;

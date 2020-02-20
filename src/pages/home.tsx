@@ -15,10 +15,15 @@ export default class Home extends React.Component {
         return (
             <Row>
                 <Col xs={12} md={7}>
-                    {this.props.name} Left
+                    Carlos Michael Rodriguez
                 </Col>
                 <Col xs={12} md={5}>
-                    Right
+                    <Row>
+                        Frontend Web Developer
+                    </Row>
+                    <Row>
+                        Game Developer
+                    </Row>
                 </Col>
             </Row>
         )
