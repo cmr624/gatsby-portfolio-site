@@ -1,9 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: `CM`,
-    description: `Carlos Michael Rodriguez Portfolio Website, built with React, Typescript, GraphQL, and GatsbyJS.`,
-    author: `@cmr624`,
-  },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
@@ -26,6 +21,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

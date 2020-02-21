@@ -14,11 +14,11 @@ function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
-        site {
+        dataJson {
           siteMetadata {
-            title
-            description
             author
+            description
+            title
           }
         }
       }
