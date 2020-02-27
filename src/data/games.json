@@ -1,0 +1,444 @@
+[{
+    "_id": {
+        "$oid": "5ca3bee8fb6fc01d565f9def"
+    },
+    "name": "ProcGen Guns",
+    "blurb": "A tool for parameterized weapons in Unity 3D.",
+    "slug": "/games/pgf",
+    "playURL": "https://cmr624.itch.io/procedurally-generated-firearms",
+    "gifURL": "/games/pgf.gif",
+    "credits": "Developed and designed by Carlos-Michael Rodriguez and Elliot Winch",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "We wanted to create a tool that generates procedural projectile-style firearms.",
+            "list": null
+        },
+        {
+            "title": "Design",
+            "description": "We studied a variety of different shooters that have projectile-style weapons, and defined a set of criteria of weapons. Overwatch served as a useful touchstone, since each character has distinct mechanics for their weapon. For example, in Overwatch, we looked at what features firearms have that changes the way users interact with them. One comparison that we analyzed was the difference between characters Symmetra and Junkrat. Both fire projectiles which cause high damage on impact, but because of the difference in projectile speed (low for Symmetra and high for Junkrat) and gravity (none for Symmetra and high for Junkrat), the two heroes have very different play styles.",
+            "list": null
+        },
+        {
+            "title": "Projectile Firearm Characteristics",
+            "description": null,
+            "list": [
+                "Bolt / Semi-automatic / Burst / Auto",
+                "Damage, Damage falloff",
+                "Range",
+                "Velocity",
+                "Rate of Fire",
+                "Reload, Ammo Capacity, Time of Reload",
+                "Charge Time",
+                "Random Spread",
+                "Projectile Count",
+                "Area of Effect",
+                "Damage on Impact",
+                "Bullet Drop",
+                "Crowd Control / Push-back"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Try now!",
+            "link": "https://cmr624.itch.io/procedurally-generated-firearms"
+        },
+        {
+            "type": "fa fa-github",
+            "description": "Source Code",
+            "link": "https://github.com/elliot-winch/ProcJam2018"
+        }
+    ],
+    "images": [
+        "/games/procgenfirearms.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3bf0ffb6fc01d565f9e03"
+    },
+    "name": "Pirate Shooter",
+    "blurb": "An FPS made using ProcGen Guns!",
+    "slug": "/games/pirateshooter",
+    "playURL": "https://cmr624.itch.io/space-pirates",
+    "gifURL": "/games/spacepirate.gif",
+    "credits": "Developed and designed by Carlos-Michael Rodriguez and Elliot Winch",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Using our Procedurally Generated Firearms tool, we created 'parametric' firearms and tried implementing it into a shooter. This project is currently in development, but a small demo is avaliable to test out the movement mechanics, zero-g movement, and shooting in a FPS environment.",
+            "list": [
+                "Elliot Winch",
+                "Carlos-Michael Rodriguez",
+                "Kevin Yang",
+                "Christy Welch"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Play now! (An early build)",
+            "link": "https://cmr624.itch.io/space-pirates"
+        }
+    ],
+    "images": [
+        "/games/spacepirate.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3bfdffb6fc01d565f9e90"
+    },
+    "name": "Switcheroo",
+    "blurb": "A 2D puzzle platformer about a kangaroo!",
+    "credits": "Developed by Carlos Michael Rodriguez and Elliot Winch. Music by Sean Porio, Art by Aaron Petykowski, and inspired by Joey Santore",
+    "slug": "/games/switcheroo",
+    "playURL": "https://github.com/GreatGrandmaGames/Switcheroo",
+    "gifURL": "/games/switcheroo.gif",
+    "sections": [
+        {
+            "title": "Project Pitch",
+            "description": "Switch-a-roo! is an action game about a kangaroo who wakes up in the wrong pouch! Separated from his mother, Joey uses his boomerang to protect himself from the snakes in the savannah and swaps places with them to stay out of danger. Following the flowers, Joey is determined to find his way home! ",
+            "list": null
+        },
+        {
+            "title": "Features Implemented",
+            "description": "Created for the Global Game Jam 2019, we wanted to implement a variety of interesting puzzle-platformer mechanics. However, we also intended to use a backend state-saving system, but the current playable build on itch has bugs rendering it unfortunately unplayable.",
+            "list": [
+                "Ability Management",
+                "Switch Ability",
+                "Boomerang Shoot / Retract Ability"
+            ]
+        },
+        {
+            "title": "Game Design",
+            "description": "We initiailly started with the fundamental idea of 'switching' characters with another switchable entity. For example, what if you could switch with an enemy on a platform you couldn't jump to? This led to some interesting emergent gameplay, such as a fun idea of jumping over a dangerous pit, switching with an enemy in mid-air, and having the enemy fall while you switch with their old, safe position.",
+            "list": null
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Repository",
+            "link": "https://github.com/GreatGrandmaGames/Switcheroo"
+        }
+    ],
+    "images": null
+},
+{
+    "_id": {
+        "$oid": "5ca3bff6fb6fc01d565f9ea3"
+    },
+    "name": "Dead to Sights",
+    "blurb": "A stealth game about being seen!",
+    "slug": "/games/deadtosights",
+    "playURL": "https://cmr624.itch.io/dead-to-sights",
+    "gifURL": "/games/deadtosights.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "A stealth game... about being seen!",
+            "list": null
+        },
+        {
+            "title": "Concept",
+            "description": "Dead to Sights is a stealth game without walls, cover, or a traditional way to hide. Help Cookie, a damaged teddy bear, escape from the toy factory by hiding in plain sight. Enemies can only see Cookie when he is walking. Use stealth, disguise, and the environment to navigate through the level without falling into pits or being detected. The game was developed for the Game Maker's Toolkit Game Jam in 2018.",
+            "list": null
+        },
+        {
+            "title": "Design",
+            "description": "Since the game jam prompt was to make a game in a genre without the central mechanic associated with that genre (as an example, a shooter with no guns), we wanted to explore different ways we can hide in a stealth game. We immediately settled on the mechanic of a toy 'freezing' to seem like a regular toy and go undetected.",
+            "list": null
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Rapid Prototyping",
+                "Unity Class Structure",
+                "Unity 2D",
+                "Github Collaboration, Project Management, and Issue Tracking"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Play now!",
+            "link": "https://cmr624.itch.io/dead-to-sights"
+        }
+    ],
+    "images": [
+        "/games/deadtosights.jpg"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3c015fb6fc01d565f9eab"
+    },
+    "name": "Boomerang",
+    "blurb": "A 2D Unity arcade shooter.",
+    "slug": "/games/boomerang",
+    "playURL": "https://cmr624.itch.io/boomerang-shooter",
+    "gifURL": "/games/boomerangvid.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "In this fast-paced arcade shooter, your gun has two firing modes: 'stun' and 'retract', and you must successfully pull off this combo consecutively in order to kill enemies.",
+            "list": null
+        },
+        {
+            "title": "Concept",
+            "description": "The game grew organically out of its central premise - that this central mechanic, of shooting and retracting, has gameplay consequences in a fast paced shooter. Everything else, like the combo system and dash mechanic, were added to enhance this central feature!",
+            "list": null
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Rapid Prototyping",
+                "Unity 2D",
+                "Solo Prototyping"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Play now! (An early build)",
+            "link": "https://cmr624.itch.io/boomerang-shooter"
+        }
+    ],
+    "images": [
+        "/games/boomerangshooter.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3c078fb6fc01d565f9f16"
+    },
+    "name": "The Kitchen",
+    "blurb": "A prototype for a cooking game.",
+    "slug": "/games/thekitchen",
+    "playURL": "https://cmr624.itch.io/kitchen-assignment-3",
+    "gifURL": "/games/kitchengif480speedup.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "A semester long-project in 'Introduction to Game Development' taken at the NYU Game Center. The assignment was to produce a fully playable Prototype in Unity 2D by the end of the semester.",
+            "list": null
+        },
+        {
+            "title": "Skills Learned",
+            "description": null,
+            "list": [
+                "Scoping a Prototype",
+                "Basic 2D Pixelart Animation and Art Generation",
+                "Unity 2D Animation Timing",
+                "Unity 2D Classes in C#"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-github",
+            "description": "Project Repository",
+            "link": "https://github.com/cmr624/kitchen_prototype"
+        },
+        {
+            "type": "fa fa-gamepad",
+            "description": "Play now!",
+            "link": "https://cmr624.itch.io/kitchen-assignment-3"
+        }
+    ],
+    "images": [
+        "/games/kitchenindex.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3c0e1fb6fc01d565f9f86"
+    },
+    "name": "You Up?",
+    "blurb": "A mobile text adventure game for iOS.",
+    "slug": "/games/youup",
+    "playURL": "https://github.com/cmr624",
+    "gifURL": "/games/youup-ggjam.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Originally designed as a prototype for Global Game Jam 2018, this mobile, dating app text adventure is currently in development.",
+            "list": null
+        },
+        {
+            "title": "Concept",
+            "description": "The game was originally designed as a game to submit to the 2018 Global Game Jam, which had a simple theme: 'TRANSMISSION.' We thought a good direction was to explore 'transmission' as the way we communicate today in society with technology. Based loosely on true events, the team and I thought it would be interesting to explore putting users directly in control of a character who experiences the perils of online dating. Being able to swipe through and actually choose someone to talk to was a big part of the concept; we liked the idea that players would be willingly (and unknowingly) choosing someone to date who later (mild spoilers!) becomes aggressive and problematic. You play as an unnamed woman in college who is trying a Tinder-like dating app for the first time. The app is currently in development and the targeted release date is 2018.",
+            "list": null
+        },
+        {
+            "title": "Parser Design Process",
+            "description": "My biggest responsiblity on the project was to create a system which we can rapidly create multiple storylines based on what the user chooses. Using an application called Twine, we could easily storyboard the story to see what actions lead to what consequences, but that app does not export into an Xcode-friendly way, so I had to create a system that would convert the visual storyboard into workable code for Nina and Elliot to use within the application.",
+            "list": [
+                "Created a standard format within Twine to consistently generate the same format of output.",
+                "Used a plugin to convert Twine into JS friendly JSON.",
+                "Built a parser to convert Twine into a tsv that worked within the app."
+            ]
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Rapid Prototyping",
+                "Writing and Storyboarding a Multiple Path Story",
+                "Built a Parser to Convert Twine to JSON.",
+                "Github Collaboration, Project Management, and Issue Tracking"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-github",
+            "description": "Project Repository",
+            "link": "https://github.com/GreatGrandmaGames/You-Up/"
+        },
+        {
+            "type": "fa fa-github",
+            "description": "Parser",
+            "link": "https://github.com/GreatGrandmaGames/You-Up/tree/master/Story/Parser"
+        }
+    ],
+    "images": [
+        "/games/youup.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3c185fb6fc01d565fa006"
+    },
+    "name": "Space Arrow VR",
+    "blurb": "A Unity 3D VR prototype.",
+    "slug": "/games/spacearrowvr",
+    "playURL": "https://github.com/cmr624",
+    "gifURL": "/games/graphicsfinalgif.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Our final project for Ken Perlin's Computer Graphics Class. Made in Unity for the HTC Vive, our team created a VR minigame where gravity affects the trajectory of arrows to score trick shots on targets. Different planetary bodies have different masses, which means arrows you shoot towards the orbit of different planets will allow the arrow to curve and bend in fun, unique, and interesting ways.",
+            "list": null
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Unity VR",
+                "Unity 3D",
+                "Steam VR",
+                "Coding / Managing VR Controls"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-github",
+            "description": "Project Repository",
+            "link": "https://github.com/GreatGrandmaGames/GraphicsFinal"
+        }
+    ],
+    "images": [
+        "/games/spaceVR.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5ca3c04bfb6fc01d565f9efc"
+    },
+    "name": "Kirby Cooking",
+    "blurb": "Cook with Kirby! Make Burgers!",
+    "slug": "/games/kirby",
+    "playURL": "https://github.com/cmr624",
+    "gifURL": "/games/kirbyplay.gif",
+    "credits": "Developed and designed by Carlos-Michael Rodriguez and Jevons Wang",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Using Javascript and P5.js, we created 'Kirby & the Amazing Burgers' for our Midterm project in Craig Kapp's Interactive Computing class. This class was the final class counting towards my web programming minor.",
+            "list": null
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Scoping a Prototype",
+                "2D Pixelart Animation using Pre-made Gifs",
+                "Javascript",
+                "P5.js",
+                "Polish with Art and Music"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-github",
+            "description": "Project Repository",
+            "link": "https://github.com/cmr624/interactiveMidterm"
+        },
+        {
+            "type": "fa fa-youtube",
+            "description": "Playthrough on YouTube",
+            "link": "https://www.youtube.com/embed/aaHgj1Xjmw8"
+        }
+    ],
+    "images": [
+        "/games/kirby.png"
+    ]
+},
+{
+    "_id": {
+        "$oid": "5d374e217c213e1b35dcfb83"
+    },
+    "name": "Expressions",
+    "blurb": "A math game about creating expressions.",
+    "slug": "/games/expressions",
+    "playURL": "https://cmr624.itch.io/expressions",
+    "gifURL": "/games/expressions-gif.gif",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "A math game created in Unity.",
+            "list": null
+        },
+        {
+            "title": "Design",
+            "description": "Built to hone my skills before my technical interview for my internship at Cognitive ToyBox, and to force myself to design a game around the contraints of an educational game.",
+            "list": null
+        },
+        {
+            "title": "How and why it was built.",
+            "description": "Using Unity, I wanted to build out a game that heavily used the Unity UI system and a grid-based layout. The underlying code was adapted through a game I wrote in Java years ago for fun, but the main intention was to practice my Unity skills for the interview at Cognitive ToyBox (which I got and worked at for 5 months!)",
+            "list": null
+        },
+        {
+            "title": "Skills Developed",
+            "description": null,
+            "list": [
+                "Rapid Prototyping",
+                "Unity Class Structure",
+                "Unity 2D",
+                "Unity UI, Canvas, and Group Layouts"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-gamepad",
+            "description": "Play now!",
+            "link": "https://cmr624.itch.io/expressions"
+        }
+    ],
+    "images": [
+        "/games/expressions-sc.png"
+    ]
+}]

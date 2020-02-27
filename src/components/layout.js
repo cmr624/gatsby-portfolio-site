@@ -35,9 +35,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
         </footer>
       </div>
     </>

@@ -1,0 +1,197 @@
+[{
+    "_id": {
+        "$oid": "5c969a47e7179a0e408bcbc2"
+    },
+    "name": "carlos-michael.com",
+    "credits": "Developed and Designed by Carlos-Michael",
+    "blurb": "A portfolio website built with a full MERN stack.",
+    "slug": "/webdev/portfolio",
+    "imgLink": "MERN.jpeg",
+    "images": null,
+    "sections": [
+        {
+            "title": "Overall Goal",
+            "description": "Version 3.0 of my portfolio website. I wanted to put all of my projects / games / recipes in a database, so I can change the content without completely having to rewrite the files. The intention behind the app was to make it as easy as possible to add and change content without affecting anyone viewing it.",
+            "list": null
+        },
+        {
+            "title": "Technologies Used",
+            "description": null,
+            "list": [
+                "Node JS",
+                "Mongo DB",
+                "React",
+                "Express",
+                "GitHub",
+                "Travis Continuous Integration",
+                "GitHub Project Management",
+                "Sketch UI Design"
+            ]
+        },
+        {
+            "title": "More Information",
+            "description": "The app is connected to an MLAB hosted Mongo database, where my express server is putting in a query for all documents and posting it on a URL where my frontend React app is fetching. This custom API allows me to send specific queries for sorting through projects.",
+            "list": null
+        }
+    ],
+    "links": [
+        {
+            "type": "GitHub",
+            "description": "GitHub Repository",
+            "link": "https://github.com/cmr624/react-portfolio-site"
+        },
+        {
+            "type": "GitHub",
+            "description": "Project Planning",
+            "link": "https://github.com/cmr624/react-portfolio-site/projects"
+        }
+    ]
+},
+{
+    "_id": {
+        "$oid": "5c99ae4ee7179a0e408cf30c"
+    },
+    "name": "Clarify",
+    "blurb": "Won top prize at HackNYU 2018 as an online presentation app.",
+    "credits": "By Carlos-Michael Rodriguez, Rachel Rub, Bo Peng, Jevons Wang, and Elliot Winch",
+    "skills": [
+        "DiMongodb",
+        "DiJavascript1",
+        "DiNodejs"
+    ],
+    "slug": "/webdev/clarify",
+    "imgLink": "clarifyPrev.png",
+    "images": [
+        "/gifs/webdev/clarifyMockUp.gif"
+    ],
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Created for HackNYU 2018, this presentation application allows for users to create a presentation or join an existing one, and view live what the presenter is presenting. You are able to send anonymous questions to the professor and they can answer them live. Clarify won in the Education Technology track, with judges noting its commercial viablity and simple and effective idea that could be rapidly adopted in higher education.",
+            "list": null
+        },
+        {
+            "title": "Technologies Used",
+            "description": null,
+            "list": [
+                "Node JS",
+                "Socket.io",
+                "MongoDB",
+                "HTML5 + CSS3",
+                "Passport",
+                "Handlebars Templating",
+                "Github"
+            ]
+        },
+        {
+            "title": "More Information",
+            "description": "Our app was for the Education Technology track at HackNYU 2018. We had a team of five of us that all had specific tasks. I was in charge of creating and delegating tasks, writing out the task requirements, and working on all aspects to make sure the vision was consistent. We broke up the design based on its core tenets of functionality: the design, user authentication and saving user data in a database (MongoDB), socket.io for real-time 'chatroom' like features, node.js to run the app, and HTML and CSS to implement the design.",
+            "list": null
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-newspaper-o",
+            "description": "Article Link",
+            "link": "https://nyulocal.com/hundreds-participate-in-annual-nyu-hackathon-ac269bc4db92"
+        }
+    ]
+},
+{
+    "_id": {
+        "$oid": "5c99ae91e7179a0e408cf333"
+    },
+    "name": "Portfolio Website - v2.0",
+    "blurb": "View how this website has evolved over time!",
+    "credits": "Developed and designed by Carlos-Michael Rodriguez",
+    "skills": [
+        "DiMongodb",
+        "DiJavascript1",
+        "DiNodejs"
+    ],
+    "slug": "/webdev/nodepersonalsite",
+    "imgLink": "express.jpeg",
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Created as my first dynamic Node-powered website, my portfolio website is a combination of many of the concepts, lessons, and material from Applied Internet Technology, a CS elective at NYU. It is fully generated using EJS templating and most of the individual pages are dynamically created and templated using JSON information, so I can rapidly add new webpages by simply adding more JSON content to the repository.",
+            "list": null
+        },
+        {
+            "title": "Technologies Used",
+            "description": null,
+            "list": [
+                "Node JS",
+                "MongoDB",
+                "HTML5 + CSS3",
+                "Bootstrap",
+                "EJS",
+                "Github"
+            ]
+        },
+        {
+            "title": "Features",
+            "description": null,
+            "list": [
+                "Responsive, mobile-friendly",
+                "HTTP Authentication for recipes",
+                "Projects, games, and recipes have templated pages generated from JSON objects"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "type": "fa fa-github",
+            "description": "Github Repository",
+            "link": "https://github.com/cmr624/nodepersonalsite"
+        }
+    ],
+    "images": null
+},
+{
+    "_id": {
+        "$oid": "5c97ce1ee7179a0e408c0d0d"
+    },
+    "name": "Restaurant Finder",
+    "blurb": "A Restaurant Finder app build for Agile Software at NYU.",
+    "credits": "By Carlos-Michael Rodriguez, Will Powers, Roy Lee, Nathalia Lin",
+    "slug": "/webdev/agile-project",
+    "imgLink": "agile.jpg",
+    "images": null,
+    "sections": [
+        {
+            "title": "Project Description",
+            "description": "Created for Devops and Agile Software Engineering, this is a semester-long project built using the M.E.R.N. stack. The app is intended to be a new way to interact with your favorite restaurants in New York. The primary purpose of the development of the app was to learn Agile software methodologies, including SCRUM, test-driven development, continuous integration, and more.",
+            "list": null
+        },
+        {
+            "title": "Technologies Used",
+            "description": null,
+            "list": [
+                "Node JS",
+                "Mongo DB",
+                "React",
+                "HTML5 + CSS3",
+                "Passport",
+                "Express",
+                "GitHub",
+                "Travis Continuous Integration",
+                "GitHub Project Management",
+                "SCRUM Agile Methodology"
+            ]
+        },
+        {
+            "title": "More Information",
+            "description": "We want to implement the overall functionality of finding restaurants based on different constraints including but not limited to location, price and cuisine type. Additional features could include randomly generating compatible restaurants and a personalized social network for sharing cuisines, ratings, coupons, deals and recommendations with friends. This app is for people with a time crunch looking for a bite to eat. People can get a restaurant they know they'll like before they even read the reviews based on the filtering services, friend's recommendations, or convenience by location.",
+            "list": null
+        }
+    ],
+    "links": [
+        {
+            "type": "GitHub",
+            "description": "GitHub Repository",
+            "link": "https://github.com/nyu-software-engineering/restaurant-finder"
+        }
+    ]
+}
+]
