@@ -11,35 +11,39 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     dataJson {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-  return (<main>{children}</main>);
-  // return (
-  //   <>
-  //     <Header siteTitle={data.dataJson.siteMetadata.title} />
-  //     <div
-  //       style={{
-  //         margin: `0 auto`,
-  //         maxWidth: 960,
-  //         padding: `0 1.0875rem 1.45rem`,
-  //       }}
-  //     >
-  //       <main>{children}</main>
-  //       <footer>
-  //       Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
-  //       </footer>
-  //     </div>
-  //   </>
-  // )
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      dataJson {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      <Header siteTitle={data.dataJson.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <Container className="mx auto">
+        <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold"}}>
+        Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
+        </footer>
+        </Container>
+        
+      </div>
+    </>
+  )
 }
 
 Layout.propTypes = {
