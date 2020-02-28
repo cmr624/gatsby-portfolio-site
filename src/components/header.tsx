@@ -12,9 +12,9 @@ const Header = ({ siteTitle }) => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle" style={{backgroundColor:"black"}}/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-            <NavLinkCenter to="/personal">At Home</NavLinkCenter>
-            <NavLinkCenter to="/scholastic">At Scholastic</NavLinkCenter>
-            <NavLinkCenter to="/nyu">At NYU</NavLinkCenter>
+            <NavLinkCenter to="/">At Home</NavLinkCenter>
+            <NavLinkCenter to="/">At Scholastic</NavLinkCenter>
+            <NavLinkCenter to="/">At NYU</NavLinkCenter>
         </Nav>
         <NavLink to="/contact">Contact</NavLink>   
       </Navbar.Collapse>

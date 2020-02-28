@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,9 +35,12 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <Container className="mx auto">
+        <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold"}}>
         Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
         </footer>
+        </Container>
+        
       </div>
     </>
   )
