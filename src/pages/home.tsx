@@ -9,7 +9,7 @@ interface Props {
 export default class Home extends React.Component {
     constructor(public props : Props)
     {
-        super(props);
+        super(props);   
     }
 
     render(){
@@ -40,3 +40,4 @@ export default class Home extends React.Component {
     }
 
 }
+
