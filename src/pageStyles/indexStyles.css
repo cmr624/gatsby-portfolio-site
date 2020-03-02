@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+    font-family: Avenir;
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 560px;
+
+}
+
+.title h1{
+    font-size: 54px;
+}
+
