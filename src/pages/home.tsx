@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../pageStyles/home.css';
 import Image from '../components/image';
+import { graphql, useStaticQuery } from 'gatsby';
 interface Props {
     name : string
 }
@@ -11,7 +12,9 @@ export default class Home extends React.Component {
     {
         super(props);   
     }
+    componentDidMount(){
 
+    }
     render(){
         return <div className="Home">
         <Container>
@@ -28,7 +31,7 @@ export default class Home extends React.Component {
               </Col>
               <Col xs={12} md={5}>
                   <div className="container">
-                    <Image/>
+                    <Image findFunction={(nodes => nodes.node.fluid.originalName === "meIRL.jpg")}/>
                   </div>
               </Col>
             </Row>
