@@ -31,7 +31,7 @@ export default class Home extends React.Component {
               </Col>
               <Col xs={12} md={5}>
                   <div className="container">
-                    <Image findFunction={(nodes => nodes.node.fluid.originalName === "meIRL.jpg")}/>
+                    <Image imageName = "meIRL.jpg"/> 
                   </div>
               </Col>
             </Row>
