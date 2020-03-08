@@ -6,7 +6,7 @@ interface Props {
     to: string;
     children : any;
 }
-
+//TODO : change from class, doesn't use state
 export default class NavLink extends Component {
     style : CSSProperties;
     constructor(public props : Props){

@@ -2,16 +2,21 @@ import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../pageStyles/home.css';
 import Image from '../components/image';
+import { graphql, useStaticQuery } from 'gatsby';
+import QueryImage from '../components/image';
 interface Props {
     name : string
 }
 
+//TODO : change from class - doesn't use state
 export default class Home extends React.Component {
     constructor(public props : Props)
     {
-        super(props);
+        super(props);   
     }
+    componentDidMount(){
 
+    }
     render(){
         return <div className="Home">
         <Container>
@@ -28,15 +33,16 @@ export default class Home extends React.Component {
               </Col>
               <Col xs={12} md={5}>
                   <div className="container">
-                    <Image/>
+                    <QueryImage queryImageName = "meIRL.jpg"/> 
                   </div>
               </Col>
             </Row>
           </Container>
           <div className="container bottom-blurb">
-            <p>Adaptive, organized, and motivated web developer looking for opportunities for growth. NYU Courant Institute Computer Science graduate, interested in expanding development skills in project organization and management, collaboration, and staying current with modern tools and best practices.</p>
+            <p>Adaptive, organized, and motivated web developer looking for opportunities for growth. NYU Courant Computer Science graduate, interested in expanding development skills in project management, collaboration, and staying current with modern tools and best practices.</p>
         </div>
         </div>
     }
 
 }
+

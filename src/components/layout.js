@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
         <Container className="mx auto">
         <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold"}}>
         Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
+        <br/> Find the repository <a href="https://github.com/cmr624/gatsby-portfolio-site">here!</a>
         </footer>
         </Container>
         
