@@ -20,25 +20,27 @@ const Personal = ({children}) => {
                     title="Phaser Typescript Library and Game Template"
                     blurb="An open source library of gameplay scripts and patterns used in Phaser 3, written in Typescript and ES6. Library included as a submodule in Webpack and Typescript game template." 
                     imageName="phaser-webpack.png"
-                    mutedText="Currently in development."
+                    mutedText="Currently in active development."
                     cardLink={{displayName:"Repository", href:"https://github.com/cmr624/cm-phaser-library"}}
                 />
                 <ProjectCard 
-                    title="whattup"
-                    blurb="whattup"
-                    imageName = "youup.png"
-                    mutedText="Currently in development."
+                    title="Portfolio Website at carlos-michael.com"
+                    blurb="The site you're on right now! A portfolio website built using Gatsby, React, and GraphQL. This is the 4th (!) time I have rebuilt my website from scratch, and I always use it as a way to learn a new stack. Follow along development with the repository link below!"
+                    imageName = "gatsby-stack.png"
+                    mutedText="Currently in active development."
+                    cardLink={{displayName : "GH Project in Repo", href:"https://github.com/cmr624/gatsby-portfolio-site/projects/1"}}
+                    // style={{maxHeight:'200px'}}
                 />
                 <ProjectCard 
-                    title="whattup"
-                    blurb="whattup"
-                    imageName="spacepirate.png"
-                    mutedText="Currently in development."
+                    title="Three Letters Puzzle Game"
+                    blurb="A small puzzle game about putting three words together! Get seven random letters, and see how they fit. Each word ends with the letter that the next word begins with! Prototype in Phaser 3 and Typescript, looking to port to Unity!"
+                    imageName="three-letters.png"
+                    mutedText="Currently in active development."
                 />
             </CardDeck>
             <Container>
                 <h2 style={{fontFamily:"Avenir", textAlign:'center', paddingTop:"20px"}}>Personal Projects Gallery Coming Soon!</h2>
-                <p style={{fontFamily:"Avenir", textAlign:'center'}}>While I work on building the gallery component, please check out my itch.io page <a href="https://cmr624.itch.io/">here</a>, where many of the games are playable, and my GitHub profile <a href="https://github.com/cmr624">here</a> for additional projects.</p>
+                <p style={{fontFamily:"Avenir", textAlign:'center'}}>While I work on building the gallery component, please check out my itch.io page <a href="https://cmr624.itch.io/">here</a>, where many of the games are playable, and my GitHub profile <a href="https://github.com/cmr624">here</a> for additional projects not listed above.</p>
             </Container>
         </Layout>
             

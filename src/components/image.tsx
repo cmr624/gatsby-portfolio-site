@@ -1,4 +1,4 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -14,6 +14,7 @@ import Img from "gatsby-image"
  */
 interface QueryImageProps {
   queryImageName : string;
+  style? : CSSProperties;
 }
 
 const QueryImage = (props : QueryImageProps) => {
@@ -35,7 +36,7 @@ const QueryImage = (props : QueryImageProps) => {
   let array = allQueryImageData.allImageSharp.edges;
   let node = array.find(nodes => nodes.node.fluid.originalName === props.queryImageName);
 
-  return <Img fluid={node.node.fluid}/>
+  return <Img fluid={node.node.fluid} style={props.style}/>
 }
 
 

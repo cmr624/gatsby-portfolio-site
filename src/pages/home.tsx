@@ -38,7 +38,7 @@ export default class Home extends React.Component {
             </Row>
           </Container>
           <div className="container bottom-blurb">
-            <p>Adaptive, organized, and motivated web developer looking for opportunities for growth. NYU Courant Institute Computer Science graduate, interested in expanding development skills in project organization and management, collaboration, and staying current with modern tools and best practices.</p>
+            <p>Adaptive, organized, and motivated web developer looking for opportunities for growth. NYU Courant Computer Science graduate, interested in expanding development skills in project management, collaboration, and staying current with modern tools and best practices.</p>
         </div>
         </div>
     }
