@@ -14,21 +14,22 @@ const Personal = ({children}) => {
             </Container>
             <CardDeck style={{padding:'15px'}}>
                 <ProjectCard 
-                    title="Phaser Typescript Library"
-                    blurb="This library is a ..."
-                    imagePath="path/"
+                    title="Phaser Typescript Library and Game Template"
+                    blurb="An open source library of gameplay scripts and patterns used in Phaser 3, written in Typescript and ES6. Library included as a submodule in Webpack and Typescript game template." 
+                    imageName="phaser-webpack.png"
+                    mutedText="Currently in development."
+                    cardLink={{displayName:"Repository", href:"https://github.com/cmr624/cm-phaser-library"}}
+                />
+                <ProjectCard 
+                    title="whattup"
+                    blurb="whattup"
+                    imageName = "youup.png"
                     mutedText="Currently in development."
                 />
                 <ProjectCard 
                     title="whattup"
                     blurb="whattup"
-                    imagePath="path/"
-                    mutedText="Currently in development."
-                />
-                <ProjectCard 
-                    title="whattup"
-                    blurb="whattup"
-                    imagePath="path/"
+                    imageName="spacepirate.png"
                     mutedText="Currently in development."
                 />
             </CardDeck>
