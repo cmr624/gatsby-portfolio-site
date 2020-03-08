@@ -11,7 +11,7 @@ const Contact = () => (
       h1Content="Contact Me"
       pContent="Please fill out the form below! If you don't hear back from me, feel free to email me at cm@nyu.edu!"
       />
-      <Form style={{fontFamily:'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"}} method="POST" data-netlify="true">
+      <Form style={{fontFamily:'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"}} method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <Form.Group controlId = "formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder = "Enter email"/>
@@ -23,6 +23,7 @@ const Contact = () => (
         <Form.Group controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Send me your CV!" />
           </Form.Group>
+        <div data-netlify-recaptcha="true"></div>
         <Button variant="primary" type="submit">
             Submit
         </Button>
