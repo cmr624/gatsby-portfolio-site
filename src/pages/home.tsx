@@ -8,6 +8,7 @@ interface Props {
     name : string
 }
 
+//TODO : change from class - doesn't use state
 export default class Home extends React.Component {
     constructor(public props : Props)
     {
