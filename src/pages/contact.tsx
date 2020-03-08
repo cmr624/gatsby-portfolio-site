@@ -20,9 +20,6 @@ const Contact = () => (
             <Form.Label>Reason for contact</Form.Label>
             <Form.Control as="textarea" rows="3" />
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Send me your CV!" />
-          </Form.Group>
         <div data-netlify-recaptcha="true"></div>
         <Button variant="primary" type="submit">
             Submit
