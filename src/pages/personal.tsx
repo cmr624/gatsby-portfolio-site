@@ -12,6 +12,9 @@ const Personal = ({children}) => {
                 <h1>Personal Projects</h1>
                 <p>Here are a list of projects I am currently working on as personal projects, helping me to continue to learn and develop my programming, web development, and project management skills. Feel free to give any feedback, submit issues, pull requests, or code contributions on any open source projects!</p>
             </Container>
+            <Container>
+                <h2 style={{fontFamily:"Avenir", textAlign:'center'}}>Projects Currently in Development!</h2>
+            </Container>
             <CardDeck style={{padding:'15px'}}>
                 <ProjectCard 
                     title="Phaser Typescript Library and Game Template"
@@ -33,6 +36,10 @@ const Personal = ({children}) => {
                     mutedText="Currently in development."
                 />
             </CardDeck>
+            <Container>
+                <h2 style={{fontFamily:"Avenir", textAlign:'center', paddingTop:"20px"}}>Personal Projects Gallery Coming Soon!</h2>
+                <p style={{fontFamily:"Avenir", textAlign:'center'}}>While I work on building the gallery component, please check out my itch.io page <a href="https://cmr624.itch.io/">here</a>, where many of the games are playable, and my GitHub profile <a href="https://github.com/cmr624">here</a> for additional projects.</p>
+            </Container>
         </Layout>
             
         
