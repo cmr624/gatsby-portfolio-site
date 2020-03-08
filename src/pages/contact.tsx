@@ -28,7 +28,7 @@ const Contact = () => (
             Submit
         </Button>
         <Form.Text className="text-muted">
-        Form implemented using Netlify's built in form setup. Please read about it <a href="https://docs.netlify.com/forms/setup/#html-forms">here.</a>
+        Form submitted using Netlify's built in form setup. Please read about it <a href="https://docs.netlify.com/forms/setup/#html-forms">here.</a>
         </Form.Text>
       </Form>
   </Layout>
