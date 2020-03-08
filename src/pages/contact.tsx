@@ -11,12 +11,11 @@ const Contact = () => (
       h1Content="Contact Me"
       pContent="Please fill out the form below! If you don't hear back from me, feel free to email me at cm@nyu.edu!"
       />
-      <Form style={{fontFamily:'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"}}>
+      <Form style={{fontFamily:'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"}} method="POST" data-netlify="true">
           <Form.Group controlId = "formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder = "Enter email"/>
           </Form.Group>
-          
           <Form.Group controlId="formTextArea">
             <Form.Label>Reason for contact</Form.Label>
             <Form.Control as="textarea" rows="3" />
