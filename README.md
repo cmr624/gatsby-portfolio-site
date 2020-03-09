@@ -19,12 +19,11 @@ Developed as the 4th web app version of my portfolio website, I always like to b
 1. Lazy Loading for Images!
 2. Built in Typescript support
 3. Programmatic pages built from GraphQL queries
-4. Contact page using Netlify
 
 ## Coming Soon
 
-1. Gallery Component
-2. Individual Project pages (some are already on the site, just not linked)
+1. Gallery Component (indexes)
+2. Individual Project pages 
 
 ## Feedback Wanted!
 
