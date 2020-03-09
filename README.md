@@ -12,11 +12,11 @@
 
 ## Details
 
-Developed as the 4th web app version of my portfolio website, I always like to build a new website while learning new tools. This repository is an example of that effort! This is my first time using Gatsby and GraphQL on a project, so I am learning as I am developing! You can find the previous versions of my website on my GitHub profile. Oh and also, I learned Vim while making this project! That was fun!
+Developed as the 4th web app version of my portfolio website, I always like to build a new website while learning new tools. This is my first time using Gatsby and GraphQL on a project, so I am learning as I am developing. You can find the previous versions of my website on my GitHub profile.
 
 ## Features
 
-1. Lazy Loading for Images!
+1. Lazy Loading for Images
 2. Built in Typescript support
 3. Programmatic pages built from GraphQL queries
 
@@ -25,7 +25,7 @@ Developed as the 4th web app version of my portfolio website, I always like to b
 1. Gallery Component (indexes)
 2. Individual Project pages 
 
-## Feedback Wanted!
+## Feedback Wanted
 
 Since this is a learning experience for me, if anyone is interested in reaching out with code contributions or recommendations for patterns I should be using, please do!
 
