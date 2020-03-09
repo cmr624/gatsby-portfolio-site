@@ -14,7 +14,8 @@ import Img from "gatsby-image"
  */
 interface QueryImageProps {
   queryImageName : string;
-  style? : CSSProperties;
+  style? : object;
+  
 }
 
 const QueryImage = (props : QueryImageProps) => {
@@ -36,7 +37,7 @@ const QueryImage = (props : QueryImageProps) => {
   let array = allQueryImageData.allImageSharp.edges;
   let node = array.find(nodes => nodes.node.fluid.originalName === props.queryImageName);
 
-  return <Img fluid={node.node.fluid} style={props.style}/>
+  return <Img fluid={node.node.fluid} style={props.style} />
 }
 
 
