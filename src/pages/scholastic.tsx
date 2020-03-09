@@ -1,7 +1,6 @@
 import React, { CSSProperties } from 'react';
-
-import Layout from "../components/layout"
-import CenteredTitle from '../components/centeredTitle';
+import Layout from '../components/globalComponents/layout';
+import CenteredTitle from '../components/layoutComponents/centeredTitle';
 
 const textStyles : CSSProperties = {
   fontFamily : "Avenir",

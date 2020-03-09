@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
-import Layout from '../components/layout';
 import { Container, CardDeck, Card } from 'react-bootstrap';
 import '../pageStyles/indexStyles.css';
-import ProjectCard from '../components/projectIndexCard';
+import Layout from '../components/globalComponents/layout';
+import ProjectCard from '../components/layoutComponents/projectIndexCard';
 
 const Personal = ({children}) => {
     return (

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../pageStyles/home.css';
-import Image from '../components/image';
-import { graphql, useStaticQuery } from 'gatsby';
-import QueryImage from '../components/image';
+import QueryImage from '../components/globalComponents/image';
+
 interface Props {
     name : string
 }

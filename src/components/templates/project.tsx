@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Layout from '../layout';
 import './project.css';
 import { StandardProjectData } from '../utils/dataTypes';
 import { Container } from 'react-bootstrap';
+import Layout from '../globalComponents/layout';
 export default (data) => {
     data = data.pageContext.node;
     let meta : StandardProjectData = {...data};

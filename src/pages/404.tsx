@@ -1,10 +1,9 @@
 import React from "react"
-
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import {Container} from 'react-bootstrap';
 import { Link } from "gatsby";
+import Layout from "../components/globalComponents/layout";
+
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />

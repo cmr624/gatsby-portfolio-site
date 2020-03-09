@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import CenteredTitle from "../components/centeredTitle"
 import { Container } from "react-bootstrap"
+import Layout from "../components/globalComponents/layout"
+import CenteredTitle from "../components/layoutComponents/centeredTitle"
 const NYU = () => (
   <Layout>
      <CenteredTitle
