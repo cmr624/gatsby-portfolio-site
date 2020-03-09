@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import CenteredTitle from "../components/centeredTitle"
+import Layout from "../components/globalComponents/layout"
+import CenteredTitle from "../components/layoutComponents/centeredTitle"
 import { Form, Button } from "react-bootstrap"
 
 const Contact = () => {
