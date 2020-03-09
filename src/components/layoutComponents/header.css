@@ -1,0 +1,21 @@
+.navbar {
+  font-family: Avenir;
+  font-weight: bold;
+
+}
+.navbar-light .navbar-toggler-icon
+{
+    background-image:url('../../assets/navbaricon.png') !important;
+}
+
+.navbar .navbar-nav #centerlink {
+    float:none;
+    margin:0 auto;
+    display: block;
+  }
+  .navbar-expand-lg .navbar-nav {
+      margin : auto;
+  }
+  .navbar .navbar-collapse {
+    text-align: left!important;
+  }
