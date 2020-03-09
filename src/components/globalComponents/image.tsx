@@ -36,7 +36,7 @@ const QueryImage = (props : QueryImageProps) => {
   `);
   let array = allQueryImageData.allImageSharp.edges;
   let node = array.find(nodes => nodes.node.fluid.originalName === props.queryImageName);
-
+  console.log(props.queryImageName);
   return <Img fluid={node.node.fluid} style={props.style} />
 }
 

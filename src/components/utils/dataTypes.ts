@@ -3,6 +3,7 @@ export interface ImageProps {
     altText : string;
 }
 
+
 export interface GameData  {
     meta : StandardProjectData;
     playURL : string;

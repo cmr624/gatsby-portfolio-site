@@ -20,7 +20,7 @@ const CarouselTitleComponent= (props : CarouselItemComponentProps) => {
         </Carousel.Item>
     )
 }
-interface CarouselIndexItemProps {
+export interface CarouselIndexItemProps {
     title : string;
     blurb : string;
     images : Array<ImageProps>;
@@ -29,10 +29,10 @@ interface CarouselIndexItemProps {
 }
 
 const QueryImageStyle = {
-    height : 400,
-    width: 600,
-    margin:'auto'
-
+    // height : 400,
+    // width: 600,
+    // margin:'auto'
+    minHeight : 400,
 }
 
 function CarouselIndexItem (props : CarouselIndexItemProps){ 
@@ -43,10 +43,10 @@ function CarouselIndexItem (props : CarouselIndexItemProps){
         setIndex(selectedIndex);
     }
     return(
-    <Container>
-        <Carousel  activeIndex={index} onSelect={handleSelect}> 
+    <Container >
+        <Carousel  activeIndex={index} onSelect={handleSelect} interval={60000}> 
             {/* <CarouselTitleComponent title={props.title} blurb={props.blurb} fileName={props.images[0].fileName}/> */}
-            <Carousel.Item >
+            <Carousel.Item style={{minHeight:"400px"}}>
                 {/* <img src="https://dummyimage.com/600x400/000/fff" width={600} height={400}/> */}
                 <QueryImage queryImageName={props.images[0].fileName} style={QueryImageStyle}/>
                 <Carousel.Caption>
@@ -57,7 +57,7 @@ function CarouselIndexItem (props : CarouselIndexItemProps){
             {
                 props.images.map((image, index) => {
                     if (index === 0) return;
-                    return (<Carousel.Item>
+                    return (<Carousel.Item style={{minHeight:"400px"}}>
                         <QueryImage queryImageName={props.images[index].fileName} style={QueryImageStyle}/>
                     </Carousel.Item>); 
                 })

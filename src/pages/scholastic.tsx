@@ -2,8 +2,10 @@ import React, { CSSProperties } from 'react';
 import Layout from '../components/globalComponents/layout';
 import CenteredTitle from '../components/layoutComponents/centeredTitle';
 import { Container } from 'react-bootstrap';
-import CarouselIndexItem from '../components/templates/gallery/carouselIndexItem';
+import CarouselIndexItem, { CarouselIndexItemProps } from '../components/templates/gallery/carouselIndexItem';
 import { ImageProps } from '../components/utils/dataTypes';
+import Gallery from '../components/templates/gallery/gallery';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const textStyles : CSSProperties = {
   fontFamily : "Avenir",
@@ -18,7 +20,48 @@ const images = [{
   altText:'gatsby stack'},
   {fileName : 'meIRL.jpg', altText:"meIRL"}
 ];
-const Scholastic = () => (
+
+let carouselProps : Array<CarouselIndexItemProps> = [
+  {
+    title:" Title one",
+    blurb: "im the one",
+    images : images,
+  },
+  {
+    title:"Title two",
+    blurb : "i'm two",
+    images : images,
+  },
+  {
+    title : "Title three",
+    blurb:"i'm number 3",
+    images : images,
+  }
+] 
+
+
+
+const Scholastic = () => {
+ const gamesGalleryQuery = useStaticQuery(graphql`
+  {
+    allGamesJson {
+      edges {
+        node {
+          name
+          images
+          blurb
+        }
+      }
+    }
+  }
+`);
+  // gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj) => {
+  //   //console.log(nodeObj.node.name);
+  //   // console.log(nodeObj.node.images)
+  //   // console.log(nodeObj);
+  //   carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images})
+  // });
+  return (
   <Layout> 
     <CenteredTitle 
       h1Content="Scholastic"
@@ -28,11 +71,9 @@ const Scholastic = () => (
     <p style={textStyles}>While I work on compiling the games I built, designed, and contributed to, please explore Scholastic's digital magazine portal for the magazine I primarily worked on, DynaMath <a href="https://dynamath.scholastic.com/pages/archives/game-archive.html?page=1">here</a>.</p>
   <Container>
     <h1>Gallery</h1>
-    <CarouselIndexItem title="Picture of thing" 
-    blurb="Caption of thing look at this long caption i think lorem ipusem etc" 
-    images={images}/>
+    <Gallery carouselProps={carouselProps}/>
   </Container>
   </Layout>
-)
+)}
 
 export default Scholastic;
