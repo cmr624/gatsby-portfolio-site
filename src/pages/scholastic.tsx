@@ -55,12 +55,13 @@ const Scholastic = () => {
     }
   }
 `);
-  // gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj) => {
-  //   //console.log(nodeObj.node.name);
-  //   // console.log(nodeObj.node.images)
-  //   // console.log(nodeObj);
-  //   carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images})
-  // });
+  gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj, i) => {
+    //console.log(nodeObj.node.name);
+    // console.log(nodeObj)
+    nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
+    carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images})
+    console.log(nodeObj.node.images);
+  });
   return (
   <Layout> 
     <CenteredTitle 

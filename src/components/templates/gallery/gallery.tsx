@@ -4,7 +4,15 @@ import {Row, Col, Container} from 'react-bootstrap';
 interface GalleryProps {
     carouselProps : Array<CarouselIndexItemProps>;
 }
+
+interface GalleryState {
+    currentItems : Array<CarouselIndexItemProps>;
+    defaultItems : Array<CarouselIndexItemProps>;
+
+}
 export class Gallery extends Component {
+    state : GalleryState;
+
     constructor(public props : GalleryProps){
         super(props)
         
@@ -17,7 +25,6 @@ export class Gallery extends Component {
 
 
     render() {
-        //@ts-ignore
         const itemsToRender = this.state.currentItems.map((e, index) => {
             return (
                 <Col xs={12} lg={4}>
