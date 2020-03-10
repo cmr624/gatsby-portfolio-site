@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
-import {Row, Col, Container, InputGroup, FormControl} from 'react-bootstrap';
+import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card} from 'react-bootstrap';
+import QueryImage from '../../globalComponents/image';
 interface SearchBarProps {
     onChange : any;
 }
@@ -58,19 +59,41 @@ export class Gallery extends Component {
     }
 
     render() {
-        const itemsToRender = this.state.currentItems.map((e, index) => {
+        let allCards = this.state.currentItems.map((e, index) => {
             return (
-                <Col xs={12} lg={4}>
-                    <CarouselIndexItem title= {e.title} blurb = {e.blurb} images={e.images}/>
-                </Col>
+                <Card style={{maxWidth:'300px', maxHeight : "500px", minWidth : "200px", padding:'10px'}}>
+                    <QueryImage queryImageName={e.images[0].fileName}/>
+                    <Card.Body>
+                        <Card.Title>
+                            {e.title}
+                        </Card.Title>
+                        <Card.Text>
+                            {e.blurb}
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
             )    
         });
+        let itemsToRender = [];
+        let three = [];
+        allCards.forEach((e, i) => {
+            if (i % 3 === 0) {
+                itemsToRender.push(three);
+                console.log('new array');
+                three = [];
+            }
+            three.push(e);
+        });
+
+        itemsToRender = itemsToRender.map((e) => {
+            console.log(e);
+            return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
+        });
+    
         return (
             <Container>
                 <SearchBar onChange={this.onChange}/>
-                <Row>
-                    {itemsToRender}
-                </Row>
+                {itemsToRender}
             </Container>        
         );
     }
