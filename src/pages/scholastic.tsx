@@ -60,7 +60,7 @@ const Scholastic = () => {
     // console.log(nodeObj)
     nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
     carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images})
-    console.log(nodeObj.node.images);
+    // console.log(nodeObj.node.images);
   });
   return (
   <Layout> 
