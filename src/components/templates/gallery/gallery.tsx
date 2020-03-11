@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
 import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card} from 'react-bootstrap';
 import QueryImage from '../../globalComponents/image';
+import { ImageProps } from '../../utils/dataTypes';
 interface SearchBarProps {
     onChange : any;
 }
@@ -22,9 +23,15 @@ const SearchBar = (props : SearchBarProps) => {
 
 
 interface GalleryProps {
-    carouselProps : Array<CarouselIndexItemProps>;
+    allGalleryItemProps: Array<GalleryItemProps>;
 }
-
+interface GalleryItemProps {
+    title : string;
+    blurb : string;
+    images : Array<ImageProps>;
+    callToActionButtonTitle?:string
+    
+}
 interface GalleryState {
     currentItems : Array<CarouselIndexItemProps>;
     defaultItems : Array<CarouselIndexItemProps>;
@@ -35,10 +42,9 @@ export class Gallery extends Component {
 
     constructor(public props : GalleryProps){
         super(props)
-        
         this.state = {
-            currentItems : props.carouselProps,
-            defaultItems : [...props.carouselProps],
+            currentItems : props.allGalleryItemProps,
+            defaultItems : [...props.allGalleryItemProps],
         }
     }
 
@@ -52,9 +58,7 @@ export class Gallery extends Component {
                 let filter = e.target.value.toLowerCase();
                 return lc.includes(filter);
             });
-            
             this.setState({currentItems : filtered});
-
         }
     }
 
@@ -62,7 +66,9 @@ export class Gallery extends Component {
         let allCards = this.state.currentItems.map((e, index) => {
             return (
                 <Card style={{maxWidth:'300px', maxHeight : "500px", minWidth : "200px", padding:'10px'}}>
-                    <QueryImage queryImageName={e.images[0].fileName}/>
+                    <Container>
+                        <QueryImage queryImageName={e.images[0].fileName}/>
+                    </Container>
                     <Card.Body>
                         <Card.Title>
                             {e.title}
@@ -70,6 +76,9 @@ export class Gallery extends Component {
                         <Card.Text>
                             {e.blurb}
                         </Card.Text>
+                        <Card.Footer>
+                            <small className="text-muted">Credits</small>
+                        </Card.Footer>
                     </Card.Body>
                 </Card>
             )    

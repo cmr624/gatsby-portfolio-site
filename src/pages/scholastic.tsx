@@ -21,25 +21,7 @@ const images = [{
   {fileName : 'meIRL.jpg', altText:"meIRL"}
 ];
 
-let carouselProps : Array<CarouselIndexItemProps> = [
-  {
-    title:" Title one",
-    blurb: "im the one",
-    images : images,
-  },
-  {
-    title:"Title two",
-    blurb : "i'm two",
-    images : images,
-  },
-  {
-    title : "Title three",
-    blurb:"i'm number 3",
-    images : images,
-  }
-] 
-
-
+let carouselProps : Array<CarouselIndexItemProps> = [];
 
 const Scholastic = () => {
  const gamesGalleryQuery = useStaticQuery(graphql`
@@ -56,11 +38,8 @@ const Scholastic = () => {
   }
 `);
   gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj, i) => {
-    //console.log(nodeObj.node.name);
-    // console.log(nodeObj)
     nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
-    carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images})
-    // console.log(nodeObj.node.images);
+    carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
   });
   return (
   <Layout> 
@@ -72,7 +51,7 @@ const Scholastic = () => {
     <p style={textStyles}>While I work on compiling the games I built, designed, and contributed to, please explore Scholastic's digital magazine portal for the magazine I primarily worked on, DynaMath <a href="https://dynamath.scholastic.com/pages/archives/game-archive.html?page=1">here</a>.</p>
   <Container>
     <h1>Gallery</h1>
-    <Gallery carouselProps={carouselProps}/>
+    <Gallery allGalleryItemProps={carouselProps}/>
   </Container>
   </Layout>
 )}
