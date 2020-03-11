@@ -7,40 +7,14 @@ import { ImageProps } from '../components/utils/dataTypes';
 import Gallery from '../components/templates/gallery/gallery';
 import { graphql, useStaticQuery } from 'gatsby';
 
+
 const textStyles : CSSProperties = {
   fontFamily : "Avenir",
   textAlign:"center"
 }
 
-const images = [{
-  fileName : 'spaceVR.png', 
-  altText:'gatsby astronaut'
-},{
-  fileName : 'kirby.png', 
-  altText:'gatsby stack'},
-  {fileName : 'meIRL.jpg', altText:"meIRL"}
-];
-
-let carouselProps : Array<CarouselIndexItemProps> = [];
 
 const Scholastic = () => {
- const gamesGalleryQuery = useStaticQuery(graphql`
-  {
-    allGamesJson {
-      edges {
-        node {
-          name
-          images
-          blurb
-        }
-      }
-    }
-  }
-`);
-  gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj, i) => {
-    nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
-    carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
-  });
   return (
   <Layout> 
     <CenteredTitle 
@@ -51,7 +25,6 @@ const Scholastic = () => {
     <p style={textStyles}>While I work on compiling the games I built, designed, and contributed to, please explore Scholastic's digital magazine portal for the magazine I primarily worked on, DynaMath <a href="https://dynamath.scholastic.com/pages/archives/game-archive.html?page=1">here</a>.</p>
   <Container>
     <h1>Gallery</h1>
-    <Gallery allGalleryItemProps={carouselProps}/>
   </Container>
   </Layout>
 )}
