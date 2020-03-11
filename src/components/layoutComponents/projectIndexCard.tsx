@@ -27,7 +27,6 @@ const ProjectCard = (props : Props) => {
 
     return (
         <Card>
-            {/* <Card.Img variant="top" src={props.imagePath} /> */}
             <QueryImage queryImageName={props.imageName} style={props.style}/>
             <Card.Body>
                 <Card.Title className="title">{props.title}</Card.Title>

@@ -11,7 +11,6 @@ interface CarouselItemComponentProps {
 const CarouselTitleComponent= (props : CarouselItemComponentProps) => {
     return(
         <Carousel.Item >
-            {/* <img src="https://dummyimage.com/600x400/000/fff" width={600} height={400}/> */}
             <QueryImage queryImageName={props.fileName}/>
             <Carousel.Caption>
                 <h3>{props.title}</h3>
