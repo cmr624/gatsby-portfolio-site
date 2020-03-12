@@ -65,9 +65,9 @@ export class Gallery extends Component {
     render() {
         let allCards = this.state.currentItems.map((e, index) => {
             return (
-                <Card style={{maxWidth:'300px', maxHeight : "500px", minWidth : "200px", padding:'10px'}}>
-                    <Container>
-                        <QueryImage queryImageName={e.images[0].fileName}/>
+                <Card style={{maxWidth:'300px', maxHeight : "500px",minHeight:"200px", minWidth : "200px", padding:'10px'}}>
+                    <Container style={{width: '100%', height:'auto', objectFit:'contain', verticalAlign:'middle'}}>
+                        <QueryImage queryImageName={e.images[0].fileName} style={{height : 'auto', width:'100%', objectFit:"contain", verticalAlign:'middle'}}/>
                     </Container>
                     <Card.Body>
                         <Card.Title>
@@ -83,26 +83,28 @@ export class Gallery extends Component {
                 </Card>
             )    
         });
-        let itemsToRender = [];
-        let three = [];
-        allCards.forEach((e, i) => {
-            if (i % 3 === 0) {
-                itemsToRender.push(three);
-                console.log('new array');
-                three = [];
-            }
-            three.push(e);
-        });
+        // let itemsToRender = [];
+        // let three = [];
+        // allCards.forEach((e, i) => {
+        //     if (i % 3 === 0) {
+        //         itemsToRender.push(three);
+        //         console.log('new array');
+        //         three = [];
+        //     }
+        //     three.push(e);
+        // });
 
-        itemsToRender = itemsToRender.map((e) => {
-            console.log(e);
-            return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
-        });
+        // itemsToRender = itemsToRender.map((e) => {
+        //     console.log(e);
+        //     return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
+        // });
     
         return (
             <Container>
                 <SearchBar onChange={this.onChange}/>
-                {itemsToRender}
+                <CardGroup >
+                {allCards}
+                </CardGroup>
             </Container>        
         );
     }

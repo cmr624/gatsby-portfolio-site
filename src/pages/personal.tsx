@@ -3,8 +3,27 @@ import { Container, CardDeck, Card } from 'react-bootstrap';
 import '../pageStyles/indexStyles.css';
 import Layout from '../components/globalComponents/layout';
 import ProjectCard from '../components/layoutComponents/projectIndexCard';
-
+import Gallery from '../components/templates/gallery/gallery';
+import {useStaticQuery, graphql} from 'gatsby';
 const Personal = ({children}) => {
+    const allGamesQuery = useStaticQuery(graphql`
+    {
+        allGamesJson {
+        edges {
+            node {
+            name
+            images
+            blurb
+            }
+        }
+        }
+    }
+    `);
+    let galleryProps = [];
+    allGamesQuery.allGamesJson.edges.forEach((nodeObj, i) => {
+        nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
+        galleryProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
+      }); 
     return (
         <Layout>
             <Container className="title">
@@ -38,8 +57,7 @@ const Personal = ({children}) => {
                 />
             </CardDeck>
             <Container>
-                <h2 style={{fontFamily:"Avenir", textAlign:'center', paddingTop:"20px"}}>Personal Projects Gallery Coming Soon!</h2>
-                <p style={{fontFamily:"Avenir", textAlign:'center'}}>While I work on building the gallery component, please check out my itch.io page <a href="https://cmr624.itch.io/">here</a>, where many of the games are playable, and my GitHub profile <a href="https://github.com/cmr624">here</a> for additional projects not listed above.</p>
+                <Gallery allGalleryItemProps={galleryProps}/>
             </Container>
         </Layout>
             

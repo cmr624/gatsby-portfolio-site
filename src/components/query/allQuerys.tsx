@@ -1,19 +1,14 @@
-import {useStaticQuery, graphql, GatsbyGraphQLType} from 'gatsby';
-export const allGamesQuery : GatsbyGraphQLType = useStaticQuery(graphql`
-  {
+import {graphql} from 'gatsby';
+export const allGamesQuery = graphql`
+{
     allGamesJson {
-      edges {
+    edges {
         node {
-          name
-          images
-          blurb
+        name
+        images
+        blurb
         }
-      }
     }
-  }
-`);
-
-/**  gamesGalleryQuery.allGamesJson.edges.forEach((nodeObj, i) => {
-    nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
-    carouselProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
-  }); */
+    }
+}
+`

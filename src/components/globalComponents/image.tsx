@@ -14,7 +14,7 @@ import Img from "gatsby-image"
  */
 interface QueryImageProps {
   queryImageName : string;
-  style? : object;
+  style? : CSSProperties;
   
 }
 
