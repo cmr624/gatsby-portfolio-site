@@ -21,7 +21,6 @@ const SearchBar = (props : SearchBarProps) => {
     );
 }
 
-
 interface GalleryProps {
     allGalleryItemProps: Array<GalleryItemProps>;
 }
@@ -32,14 +31,12 @@ interface GalleryItemProps {
     blurb : string;
     images : Array<ImageProps>;
     callToActionButtonTitle?:string
-    
 }
 
 //gallery state
 interface GalleryState {
     currentItems : Array<CarouselIndexItemProps>;
     defaultItems : Array<CarouselIndexItemProps>;
-
 }
 
 /**
@@ -82,12 +79,11 @@ export class Gallery extends Component {
         // the length of the card array divided by 3 is the number of card groups we need
         // initialize card groups and pass in 3 at a time to the arrays
         let numberOfGroups = Math.ceil(array.length / 3);
-        console.log(numberOfGroups);
 
         function formula(numberPerCardGroup, currentIndexInArray, currentIndexInLoop) : number{
             return (numberPerCardGroup * currentIndexInArray) + currentIndexInLoop;
         }
-        
+
         for (let currentIndexInArray = 0; currentIndexInArray < numberOfGroups; currentIndexInArray++) {
             let arrayOfCards = [];
             for (let currentIndexInLoop = 0; currentIndexInLoop < numberPerCardGroup; currentIndexInLoop++) {
@@ -104,7 +100,7 @@ export class Gallery extends Component {
 
 
     render() {
-        let allCards = this.state.currentItems.map((e) => {
+        let allCards = this.state.currentItems.map((e : CarouselIndexItemProps) => {
             return (
                 <Card style={{maxWidth:'300px', maxHeight : "500px",minHeight:"200px", minWidth : "200px", padding:'10px'}}>
                     <Container style={{width: '100%', height:'auto', objectFit:'contain', verticalAlign:'middle'}}>
@@ -117,9 +113,7 @@ export class Gallery extends Component {
                         <Card.Text>
                             {e.blurb}
                         </Card.Text>
-                        <Card.Footer>
-                            <small className="text-muted">Credits</small>
-                        </Card.Footer>
+                        
                     </Card.Body>
                 </Card>
             )    
@@ -139,17 +133,8 @@ export class Gallery extends Component {
 
 export default Gallery;
 
-// let itemsToRender = [];
-// let three = [];
-// allCards.forEach((e, i) => {
-//     if (i % 3 === 0) {
-//         itemsToRender.push(three);
-//         console.log('new array');
-//         three = [];
-//     }
-//     three.push(e);
-// });
-// itemsToRender = itemsToRender.map((e) => {
-//     console.log(e);
-//     return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
-// });
+/**
+ * <Card.Footer style={{verticalAlign:'bottom'}}>
+ *    <small className="text-muted">Credits </small>
+ * </Card.Footer>
+*/
