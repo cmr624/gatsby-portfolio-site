@@ -4,23 +4,12 @@ import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card} from 'rea
 import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
 
+import { FaSortButton, FaToggleButtonGroup, IconProps } from '../../layoutComponents/fa-icons';
+
 
 // write const that has icon jsx and alternate text (string version of skill / technology) ie icon : <GitHub/> , name : "GitHub"
 
-// icon requirements 
-/**
- * github (x)
- * javascript (x)
- * gatsby
- * unity (x)
- * vr (x)
- * html (x)
- * react (x)
- * css (x)
- * c#
- * typescript
- * phaser
- */
+
 
 interface SortBarProps {
      
@@ -31,22 +20,14 @@ interface SortBarProps {
  * @param props array of icons to display
  */
 const SortBar = (props : SortBarProps) => {
+    let array = new Array<IconProps>();
+    array.push({faIconName:"react",skillString:"react"});
     return(
         <Container>
-            
+            <FaToggleButtonGroup arrayIconProps={array}/>
         </Container>
     )
 }
-
-
-
-
-
-
-
-
-
-
 
 interface SearchBarProps {
     onChange : any;
