@@ -25,6 +25,8 @@ const SearchBar = (props : SearchBarProps) => {
 interface GalleryProps {
     allGalleryItemProps: Array<GalleryItemProps>;
 }
+
+//gallery item props
 interface GalleryItemProps {
     title : string;
     blurb : string;
@@ -32,11 +34,18 @@ interface GalleryItemProps {
     callToActionButtonTitle?:string
     
 }
+
+//gallery state
 interface GalleryState {
     currentItems : Array<CarouselIndexItemProps>;
     defaultItems : Array<CarouselIndexItemProps>;
 
 }
+
+/**
+ * @class Gallery
+ * @classdesc A searchable gallery component, searchable by title 
+ */
 export class Gallery extends Component {
     state : GalleryState;
 
@@ -48,7 +57,8 @@ export class Gallery extends Component {
         }
     }
 
-    onChange = (e) => {
+    //on change for search bar, searchable by title
+    onChange = (e : React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.value === "") {
             this.setState({currentItems : this.state.defaultItems});
         }
@@ -61,9 +71,40 @@ export class Gallery extends Component {
             this.setState({currentItems : filtered});
         }
     }
+   
+    /**
+     * Converts the array to an array of card group items with 3 or less cards in it
+     * @param array Array of React Bootstrap Cards
+     * @returns {array} array of JSX React <CardGroups> with 3 or less cards in it
+     */
+    cardsToCardGroup(array, numberPerCardGroup){
+        let returnArray = [];   
+        // the length of the card array divided by 3 is the number of card groups we need
+        // initialize card groups and pass in 3 at a time to the arrays
+        let numberOfGroups = Math.ceil(array.length / 3);
+        console.log(numberOfGroups);
+
+        function formula(numberPerCardGroup, currentIndexInArray, currentIndexInLoop) : number{
+            return (numberPerCardGroup * currentIndexInArray) + currentIndexInLoop;
+        }
+        
+        for (let currentIndexInArray = 0; currentIndexInArray < numberOfGroups; currentIndexInArray++) {
+            let arrayOfCards = [];
+            for (let currentIndexInLoop = 0; currentIndexInLoop < numberPerCardGroup; currentIndexInLoop++) {
+                 arrayOfCards.push(array[formula(numberPerCardGroup, currentIndexInArray, currentIndexInLoop)]);
+            }
+            returnArray.push(
+                <CardGroup>
+                    {arrayOfCards}
+                </CardGroup>
+            );
+        } 
+        return returnArray;
+    }
+
 
     render() {
-        let allCards = this.state.currentItems.map((e, index) => {
+        let allCards = this.state.currentItems.map((e) => {
             return (
                 <Card style={{maxWidth:'300px', maxHeight : "500px",minHeight:"200px", minWidth : "200px", padding:'10px'}}>
                     <Container style={{width: '100%', height:'auto', objectFit:'contain', verticalAlign:'middle'}}>
@@ -83,27 +124,13 @@ export class Gallery extends Component {
                 </Card>
             )    
         });
-        // let itemsToRender = [];
-        // let three = [];
-        // allCards.forEach((e, i) => {
-        //     if (i % 3 === 0) {
-        //         itemsToRender.push(three);
-        //         console.log('new array');
-        //         three = [];
-        //     }
-        //     three.push(e);
-        // });
+       let cardGroups =  this.cardsToCardGroup(allCards, 3);
 
-        // itemsToRender = itemsToRender.map((e) => {
-        //     console.log(e);
-        //     return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
-        // });
-    
         return (
             <Container>
                 <SearchBar onChange={this.onChange}/>
                 <CardGroup >
-                {allCards}
+                {cardGroups}
                 </CardGroup>
             </Container>        
         );
@@ -111,3 +138,18 @@ export class Gallery extends Component {
 }
 
 export default Gallery;
+
+// let itemsToRender = [];
+// let three = [];
+// allCards.forEach((e, i) => {
+//     if (i % 3 === 0) {
+//         itemsToRender.push(three);
+//         console.log('new array');
+//         three = [];
+//     }
+//     three.push(e);
+// });
+// itemsToRender = itemsToRender.map((e) => {
+//     console.log(e);
+//     return (<CardGroup style={{padding:'10px'}}>{e}</CardGroup>)
+// });
