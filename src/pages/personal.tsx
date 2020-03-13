@@ -5,6 +5,9 @@ import Layout from '../components/globalComponents/layout';
 import ProjectCard from '../components/layoutComponents/projectIndexCard';
 import Gallery from '../components/templates/gallery/gallery';
 import {useStaticQuery, graphql} from 'gatsby';
+
+import CenteredTitle from '../components/layoutComponents/centeredTitle';
+
 const Personal = ({children}) => {
     const allGamesQuery = useStaticQuery(graphql`
     {
@@ -57,6 +60,7 @@ const Personal = ({children}) => {
                 />
             </CardDeck>
             <Container>
+                <CenteredTitle h1Content="Personal Projects Gallery" pContent="Search projects by title or description, and sort by skill or technology used!"/>
                 <Gallery allGalleryItemProps={galleryProps}/>
             </Container>
         </Layout>

@@ -53,7 +53,8 @@
     ],
     "images": [
         "procgenfirearms.png"
-    ]
+    ],
+    "skills":[]
 },
 {
     "_id": {
@@ -86,7 +87,8 @@
     ],
     "images": [
         "spacepirate.png"
-    ]
+    ],
+    "skills":["unity", "github", "c#"]
 },
 {
     "_id": {
@@ -128,7 +130,8 @@
     ],
     "images": [
         "deadtosights.jpg"
-    ] 
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -175,7 +178,8 @@
     ],
     "images": [
         "deadtosights.jpg"
-    ]
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -216,7 +220,8 @@
     ],
     "images": [
         "boomerangshooter.png"
-    ]
+    ],
+    "skills":[]
 },
 {
     "_id": {
@@ -258,7 +263,8 @@
     ],
     "images": [
         "kitchenindex.png"
-    ]
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -314,7 +320,8 @@
     ],
     "images": [
         "youup.png"
-    ]
+    ],
+    "skills":["javascript"]
 },
 {
     "_id": {
@@ -351,7 +358,8 @@
     ],
     "images": [
         "spaceVR.png"
-    ]
+    ],
+    "skills":["vr", "github", "c#", "unity"]
 },
 {
     "_id": {
@@ -395,7 +403,8 @@
     ],
     "images": [
         "kirby.png"
-    ]
+    ],
+    "skills":["html", "css","github", "javascript"]
 },
 {
     "_id": {
@@ -442,5 +451,6 @@
     ],
     "images": [
         "expressions-sc.png"
-    ]
+    ],
+    "skills":["github", "c#", "unity"]
 }]

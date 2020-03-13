@@ -3,6 +3,51 @@ import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselInde
 import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card} from 'react-bootstrap';
 import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
+
+
+// write const that has icon jsx and alternate text (string version of skill / technology) ie icon : <GitHub/> , name : "GitHub"
+
+// icon requirements 
+/**
+ * github (x)
+ * javascript (x)
+ * gatsby
+ * unity (x)
+ * vr (x)
+ * html (x)
+ * react (x)
+ * css (x)
+ * c#
+ * typescript
+ * phaser
+ */
+
+interface SortBarProps {
+     
+}
+
+/**
+ * 
+ * @param props array of icons to display
+ */
+const SortBar = (props : SortBarProps) => {
+    return(
+        <Container>
+            
+        </Container>
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
 interface SearchBarProps {
     onChange : any;
 }
@@ -113,7 +158,6 @@ export class Gallery extends Component {
                         <Card.Text>
                             {e.blurb}
                         </Card.Text>
-                        
                     </Card.Body>
                 </Card>
             )    
