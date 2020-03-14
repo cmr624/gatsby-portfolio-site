@@ -7,13 +7,7 @@ import { ImageProps } from '../../utils/dataTypes';
 import { FaSortButton, FaToggleButtonGroup, IconProps } from '../../layoutComponents/fa-icons';
 
 
-// write const that has icon jsx and alternate text (string version of skill / technology) ie icon : <GitHub/> , name : "GitHub"
-
-
-
-interface SortBarProps {
-     
-}
+interface SortBarProps {}
 
 /**
  * 
@@ -39,9 +33,9 @@ const SearchBar = (props : SearchBarProps) => {
             <InputGroup.Text id="inputGroup-sizing-default" >Search</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-            aria-label="Default"
-            aria-describedby="inputGroup-sizing-default"
-            onChange={props.onChange}
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
+                onChange={props.onChange}
             />
         </InputGroup>
     );
@@ -116,7 +110,7 @@ export class Gallery extends Component {
                  arrayOfCards.push(array[formula(numberPerCardGroup, currentIndexInArray, currentIndexInLoop)]);
             }
             returnArray.push(
-                <CardGroup>
+                <CardGroup style={{padding: '10px'}}>
                     {arrayOfCards}
                 </CardGroup>
             );
@@ -128,9 +122,9 @@ export class Gallery extends Component {
     render() {
         let allCards = this.state.currentItems.map((e : CarouselIndexItemProps) => {
             return (
-                <Card style={{maxWidth:'300px', maxHeight : "500px",minHeight:"200px", minWidth : "200px", padding:'10px'}}>
-                    <Container style={{width: '100%', height:'auto', objectFit:'contain', verticalAlign:'middle'}}>
-                        <QueryImage queryImageName={e.images[0].fileName} style={{height : 'auto', width:'100%', objectFit:"contain", verticalAlign:'middle'}}/>
+                <Card style={{maxWidth:"300px"}}>
+                    <Container style={{width: '100%',height:'200px' }}>
+                        <QueryImage queryImageName={e.images[0].fileName} style={{position:'relative', top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
                     </Container>
                     <Card.Body>
                         <Card.Title>
@@ -148,9 +142,7 @@ export class Gallery extends Component {
         return (
             <Container>
                 <SearchBar onChange={this.onChange}/>
-                <CardGroup >
                 {cardGroups}
-                </CardGroup>
             </Container>        
         );
     }
