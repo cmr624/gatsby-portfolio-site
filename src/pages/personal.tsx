@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, CardDeck, Card } from 'react-bootstrap';
 import '../pageStyles/indexStyles.css';
 import Layout from '../components/globalComponents/layout';
 import ProjectCard from '../components/layoutComponents/projectIndexCard';
-import Gallery from '../components/templates/gallery/gallery';
-import {useStaticQuery, graphql} from 'gatsby';
 
-import CenteredTitle from '../components/layoutComponents/centeredTitle';
 
 const Personal = ({children}) => {
     
