@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React, { CSSProperties } from "react"
 import {Nav, Navbar, Container} from 'react-bootstrap';
-import NavLink, {NavLinkCenter} from './navLink';
+import NavLink, {NavLinkCenter} from '../globalComponents/navLink';
 import './header.css';
 
 const Header = ({ siteTitle }) => (

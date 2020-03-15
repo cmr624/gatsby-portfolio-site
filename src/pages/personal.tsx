@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
-import Layout from '../components/layout';
 import { Container, CardDeck, Card } from 'react-bootstrap';
 import '../pageStyles/indexStyles.css';
-import ProjectCard from '../components/projectIndexCard';
+import Layout from '../components/globalComponents/layout';
+import ProjectCard from '../components/layoutComponents/projectIndexCard';
+import Gallery from '../components/templates/gallery/gallery';
+import {useStaticQuery, graphql} from 'gatsby';
+
+import CenteredTitle from '../components/layoutComponents/centeredTitle';
 
 const Personal = ({children}) => {
+    
     return (
         <Layout>
             <Container className="title">
@@ -38,10 +42,6 @@ const Personal = ({children}) => {
                     mutedText="Currently in active development."
                 />
             </CardDeck>
-            <Container>
-                <h2 style={{fontFamily:"Avenir", textAlign:'center', paddingTop:"20px"}}>Personal Projects Gallery Coming Soon!</h2>
-                <p style={{fontFamily:"Avenir", textAlign:'center'}}>While I work on building the gallery component, please check out my itch.io page <a href="https://cmr624.itch.io/">here</a>, where many of the games are playable, and my GitHub profile <a href="https://github.com/cmr624">here</a> for additional projects not listed above.</p>
-            </Container>
         </Layout>
             
         

@@ -1,14 +1,21 @@
 import React, { CSSProperties } from 'react';
+import Layout from '../components/globalComponents/layout';
+import CenteredTitle from '../components/layoutComponents/centeredTitle';
+import { Container } from 'react-bootstrap';
+import CarouselIndexItem, { CarouselIndexItemProps } from '../components/templates/gallery/carouselIndexItem';
+import { ImageProps } from '../components/utils/dataTypes';
+import Gallery from '../components/templates/gallery/gallery';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from "../components/layout"
-import CenteredTitle from '../components/centeredTitle';
 
 const textStyles : CSSProperties = {
   fontFamily : "Avenir",
   textAlign:"center"
 }
 
-const Scholastic = () => (
+
+const Scholastic = () => {
+  return (
   <Layout> 
     <CenteredTitle 
       h1Content="Scholastic"
@@ -16,7 +23,10 @@ const Scholastic = () => (
     />
     <h2 style={textStyles}>Game Gallery Coming Soon!</h2>
     <p style={textStyles}>While I work on compiling the games I built, designed, and contributed to, please explore Scholastic's digital magazine portal for the magazine I primarily worked on, DynaMath <a href="https://dynamath.scholastic.com/pages/archives/game-archive.html?page=1">here</a>.</p>
+  <Container>
+    <h1>Gallery</h1>
+  </Container>
   </Layout>
-)
+)}
 
 export default Scholastic;

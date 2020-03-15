@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import {Card} from 'react-bootstrap';
 
 import './projectIndexCard.css';
-import QueryImage from './image';
+import QueryImage from '../globalComponents/image';
 
 interface Link {
     displayName : string;
@@ -27,7 +27,6 @@ const ProjectCard = (props : Props) => {
 
     return (
         <Card>
-            {/* <Card.Img variant="top" src={props.imagePath} /> */}
             <QueryImage queryImageName={props.imageName} style={props.style}/>
             <Card.Body>
                 <Card.Title className="title">{props.title}</Card.Title>

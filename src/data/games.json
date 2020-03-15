@@ -4,9 +4,9 @@
     },
     "name": "ProcGen Guns",
     "blurb": "A tool for parameterized weapons in Unity 3D.",
-    "slug": "/games/pgf",
+    "slug": "pgf",
     "playURL": "https://cmr624.itch.io/procedurally-generated-firearms",
-    "gifURL": "/games/pgf.gif",
+    "gifURL": "pgf.gif",
     "credits": "Developed and designed by Carlos-Michael Rodriguez and Elliot Winch",
     "sections": [
         {
@@ -52,8 +52,9 @@
         }
     ],
     "images": [
-        "/games/procgenfirearms.png"
-    ]
+        "procgenfirearms.png"
+    ],
+    "skills":[]
 },
 {
     "_id": {
@@ -61,9 +62,9 @@
     },
     "name": "Pirate Shooter",
     "blurb": "An FPS made using ProcGen Guns!",
-    "slug": "/games/pirateshooter",
+    "slug": "pirateshooter",
     "playURL": "https://cmr624.itch.io/space-pirates",
-    "gifURL": "/games/spacepirate.gif",
+    "gifURL": "spacepirate.gif",
     "credits": "Developed and designed by Carlos-Michael Rodriguez and Elliot Winch",
     "sections": [
         {
@@ -85,8 +86,9 @@
         }
     ],
     "images": [
-        "/games/spacepirate.png"
-    ]
+        "spacepirate.png"
+    ],
+    "skills":["unity", "github", "c#"]
 },
 {
     "_id": {
@@ -95,9 +97,9 @@
     "name": "Switcheroo",
     "blurb": "A 2D puzzle platformer about a kangaroo!",
     "credits": "Developed by Carlos Michael Rodriguez and Elliot Winch. Music by Sean Porio, Art by Aaron Petykowski, and inspired by Joey Santore",
-    "slug": "/games/switcheroo",
+    "slug": "switcheroo",
     "playURL": "https://github.com/GreatGrandmaGames/Switcheroo",
-    "gifURL": "/games/switcheroo.gif",
+    "gifURL": "switcheroo.gif",
     "sections": [
         {
             "title": "Project Pitch",
@@ -126,7 +128,10 @@
             "link": "https://github.com/GreatGrandmaGames/Switcheroo"
         }
     ],
-    "images": null
+    "images": [
+        "deadtosights.jpg"
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -134,9 +139,9 @@
     },
     "name": "Dead to Sights",
     "blurb": "A stealth game about being seen!",
-    "slug": "/games/deadtosights",
+    "slug": "deadtosights",
     "playURL": "https://cmr624.itch.io/dead-to-sights",
-    "gifURL": "/games/deadtosights.gif",
+    "gifURL": "deadtosights.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -172,8 +177,9 @@
         }
     ],
     "images": [
-        "/games/deadtosights.jpg"
-    ]
+        "deadtosights.jpg"
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -181,9 +187,9 @@
     },
     "name": "Boomerang",
     "blurb": "A 2D Unity arcade shooter.",
-    "slug": "/games/boomerang",
+    "slug": "boomerang",
     "playURL": "https://cmr624.itch.io/boomerang-shooter",
-    "gifURL": "/games/boomerangvid.gif",
+    "gifURL": "boomerangvid.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -213,8 +219,9 @@
         }
     ],
     "images": [
-        "/games/boomerangshooter.png"
-    ]
+        "boomerangshooter.png"
+    ],
+    "skills":[]
 },
 {
     "_id": {
@@ -222,9 +229,9 @@
     },
     "name": "The Kitchen",
     "blurb": "A prototype for a cooking game.",
-    "slug": "/games/thekitchen",
+    "slug": "thekitchen",
     "playURL": "https://cmr624.itch.io/kitchen-assignment-3",
-    "gifURL": "/games/kitchengif480speedup.gif",
+    "gifURL": "kitchengif480speedup.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -255,8 +262,9 @@
         }
     ],
     "images": [
-        "/games/kitchenindex.png"
-    ]
+        "kitchenindex.png"
+    ],
+    "skills":["unity", "c#", "github"]
 },
 {
     "_id": {
@@ -264,9 +272,9 @@
     },
     "name": "You Up?",
     "blurb": "A mobile text adventure game for iOS.",
-    "slug": "/games/youup",
+    "slug": "youup",
     "playURL": "https://github.com/cmr624",
-    "gifURL": "/games/youup-ggjam.gif",
+    "gifURL": "youup-ggjam.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -311,8 +319,9 @@
         }
     ],
     "images": [
-        "/games/youup.png"
-    ]
+        "youup.png"
+    ],
+    "skills":["javascript"]
 },
 {
     "_id": {
@@ -320,9 +329,9 @@
     },
     "name": "Space Arrow VR",
     "blurb": "A Unity 3D VR prototype.",
-    "slug": "/games/spacearrowvr",
+    "slug": "spacearrowvr",
     "playURL": "https://github.com/cmr624",
-    "gifURL": "/games/graphicsfinalgif.gif",
+    "gifURL": "graphicsfinalgif.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -348,8 +357,9 @@
         }
     ],
     "images": [
-        "/games/spaceVR.png"
-    ]
+        "spaceVR.png"
+    ],
+    "skills":["vr", "github", "c#", "unity"]
 },
 {
     "_id": {
@@ -357,9 +367,9 @@
     },
     "name": "Kirby Cooking",
     "blurb": "Cook with Kirby! Make Burgers!",
-    "slug": "/games/kirby",
+    "slug": "kirby",
     "playURL": "https://github.com/cmr624",
-    "gifURL": "/games/kirbyplay.gif",
+    "gifURL": "kirbyplay.gif",
     "credits": "Developed and designed by Carlos-Michael Rodriguez and Jevons Wang",
     "sections": [
         {
@@ -392,8 +402,9 @@
         }
     ],
     "images": [
-        "/games/kirby.png"
-    ]
+        "kirby.png"
+    ],
+    "skills":["html", "css","github", "javascript"]
 },
 {
     "_id": {
@@ -401,9 +412,9 @@
     },
     "name": "Expressions",
     "blurb": "A math game about creating expressions.",
-    "slug": "/games/expressions",
+    "slug": "expressions",
     "playURL": "https://cmr624.itch.io/expressions",
-    "gifURL": "/games/expressions-gif.gif",
+    "gifURL": "expressions-gif.gif",
     "sections": [
         {
             "title": "Project Description",
@@ -439,6 +450,7 @@
         }
     ],
     "images": [
-        "/games/expressions-sc.png"
-    ]
+        "expressions-sc.png"
+    ],
+    "skills":["github", "c#", "unity"]
 }]

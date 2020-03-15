@@ -1,12 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import CenteredTitle from "../components/centeredTitle"
+import Layout from "../components/globalComponents/layout"
+import CenteredTitle from "../components/layoutComponents/centeredTitle"
 import { Form, Button } from "react-bootstrap"
 
 const Contact = () => {
- let formStyle= {"fontFamily":'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"}
+ let formStyle= {"fontFamily":'Avenir', maxWidth:'550px', margin:'auto', padding:"15px"};
   
   return (
   <Layout>
@@ -14,7 +13,7 @@ const Contact = () => {
       h1Content="Contact Me"
       pContent="Please fill out the form below! If you don't hear back from me, feel free to email me at cm@nyu.edu!"
       />
-      <Form style={formStyle}  method="post" netlify-honeypot="bot-field" data-netlify="true">
+      <Form style={formStyle} onSubmit={(e) => e.preventDefault()} method="post" netlify-honeypot="bot-field" data-netlify="true">
        <input type="hidden" name="bot-field" />
           <Form.Group controlId = "formBasicEmail">
               <Form.Label>Email address</Form.Label>

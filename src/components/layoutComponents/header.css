@@ -5,7 +5,7 @@
 }
 .navbar-light .navbar-toggler-icon
 {
-    background-image:url("../assets/navbaricon.png") !important;
+    background-image:url('../../assets/navbaricon.png') !important;
 }
 
 .navbar .navbar-nav #centerlink {
