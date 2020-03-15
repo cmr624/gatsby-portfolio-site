@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
-import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card} from 'react-bootstrap';
+import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card, CardDeck} from 'react-bootstrap';
 import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
 
@@ -110,9 +110,9 @@ export class Gallery extends Component {
                  arrayOfCards.push(array[formula(numberPerCardGroup, currentIndexInArray, currentIndexInLoop)]);
             }
             returnArray.push(
-                <CardGroup style={{padding: '10px'}}>
+                <CardDeck style={{padding: '10px'}}>
                     {arrayOfCards}
-                </CardGroup>
+                </CardDeck>
             );
         } 
         return returnArray;
@@ -122,7 +122,7 @@ export class Gallery extends Component {
     render() {
         let allCards = this.state.currentItems.map((e : CarouselIndexItemProps) => {
             return (
-                <Card style={{maxWidth:"300px"}}>
+                <Card style={{maxWidth:"30%"}}>
                     <Container style={{width: '100%',height:'200px' }}>
                         <QueryImage queryImageName={e.images[0].fileName} style={{position:'relative', top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
                     </Container>
@@ -149,9 +149,3 @@ export class Gallery extends Component {
 }
 
 export default Gallery;
-
-/**
- * <Card.Footer style={{verticalAlign:'bottom'}}>
- *    <small className="text-muted">Credits </small>
- * </Card.Footer>
-*/
