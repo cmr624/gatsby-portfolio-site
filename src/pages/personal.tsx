@@ -9,24 +9,7 @@ import {useStaticQuery, graphql} from 'gatsby';
 import CenteredTitle from '../components/layoutComponents/centeredTitle';
 
 const Personal = ({children}) => {
-    const allGamesQuery = useStaticQuery(graphql`
-    {
-        allGamesJson {
-        edges {
-            node {
-            name
-            images
-            blurb
-            }
-        }
-        }
-    }
-    `);
-    let galleryProps = [];
-    allGamesQuery.allGamesJson.edges.forEach((nodeObj, i) => {
-        nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
-        galleryProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
-      }); 
+    
     return (
         <Layout>
             <Container className="title">
@@ -59,10 +42,6 @@ const Personal = ({children}) => {
                     mutedText="Currently in active development."
                 />
             </CardDeck>
-            <Container>
-                <CenteredTitle h1Content="Personal Projects Gallery" pContent="Search projects by title or description, and sort by skill or technology used!"/>
-                <Gallery allGalleryItemProps={galleryProps}/>
-            </Container>
         </Layout>
             
         
