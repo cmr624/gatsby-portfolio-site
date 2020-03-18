@@ -55,14 +55,11 @@ const PersonalPageQuery = () => {
   let allProps = [];
   webCards.forEach((e) => {allProps.push(e)});
   gameProps.forEach((e) => {allProps.push(e)});
-  return (<Gallery allGalleryItemProps={webCards.concat(gameProps)}/>);
-  // return <pre>{JSON.stringify(web, null, 4)}</pre>
+  return (<Gallery allGalleryItemProps={allProps}/>);
 }
 
 function createGameCards(rawQueryData, images : Array<any>){
   let data = mutateNodes(rawQueryData);
-  console.log(data);
-
   let galleryItemProps : Array<GalleryItemProps> = [];
   data.forEach((e) => {
     if (e.school === null){
@@ -73,9 +70,7 @@ function createGameCards(rawQueryData, images : Array<any>){
         images:[{fluid:images.find(x => x.fluid.originalName === e.images[0]).fluid, altText:e.images[0]}]
       })
     }
-    
   })
-
   return galleryItemProps;
 }
 
