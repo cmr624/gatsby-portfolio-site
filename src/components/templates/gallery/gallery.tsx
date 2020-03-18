@@ -3,7 +3,7 @@ import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselInde
 import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card, CardDeck} from 'react-bootstrap';
 import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
-
+import Img from "gatsby-image"
 import { FaSortButton, FaToggleButtonGroup, IconProps } from '../../layoutComponents/fa-icons';
 // const allGamesQuery = useStaticQuery(graphql`
 //     {
@@ -67,7 +67,7 @@ interface GalleryProps {
 }
 
 //gallery item props
-interface GalleryItemProps {
+export interface GalleryItemProps {
     title : string;
     blurb : string;
     images : Array<ImageProps>;
@@ -145,7 +145,7 @@ export class Gallery extends Component {
             return (
                 <Card style={{maxWidth:"30%"}}>
                     <Container style={{width: '100%',height:'200px' }}>
-                        <QueryImage queryImageName={e.images[0].fileName} style={{position:'relative', top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
+                        <Img fluid={e.images[0].fluid} style={{position:'relative', top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
                     </Container>
                     <Card.Body>
                         <Card.Title>

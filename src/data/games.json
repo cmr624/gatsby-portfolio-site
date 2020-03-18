@@ -227,6 +227,7 @@
     "_id": {
         "$oid": "5ca3c078fb6fc01d565f9f16"
     },
+    "school":true,
     "name": "The Kitchen",
     "blurb": "A prototype for a cooking game.",
     "slug": "thekitchen",
@@ -268,65 +269,9 @@
 },
 {
     "_id": {
-        "$oid": "5ca3c0e1fb6fc01d565f9f86"
-    },
-    "name": "You Up?",
-    "blurb": "A mobile text adventure game for iOS.",
-    "slug": "youup",
-    "playURL": "https://github.com/cmr624",
-    "gifURL": "youup-ggjam.gif",
-    "sections": [
-        {
-            "title": "Project Description",
-            "description": "Originally designed as a prototype for Global Game Jam 2018, this mobile, dating app text adventure is currently in development.",
-            "list": null
-        },
-        {
-            "title": "Concept",
-            "description": "The game was originally designed as a game to submit to the 2018 Global Game Jam, which had a simple theme: 'TRANSMISSION.' We thought a good direction was to explore 'transmission' as the way we communicate today in society with technology. Based loosely on true events, the team and I thought it would be interesting to explore putting users directly in control of a character who experiences the perils of online dating. Being able to swipe through and actually choose someone to talk to was a big part of the concept; we liked the idea that players would be willingly (and unknowingly) choosing someone to date who later (mild spoilers!) becomes aggressive and problematic. You play as an unnamed woman in college who is trying a Tinder-like dating app for the first time. The app is currently in development and the targeted release date is 2018.",
-            "list": null
-        },
-        {
-            "title": "Parser Design Process",
-            "description": "My biggest responsiblity on the project was to create a system which we can rapidly create multiple storylines based on what the user chooses. Using an application called Twine, we could easily storyboard the story to see what actions lead to what consequences, but that app does not export into an Xcode-friendly way, so I had to create a system that would convert the visual storyboard into workable code for Nina and Elliot to use within the application.",
-            "list": [
-                "Created a standard format within Twine to consistently generate the same format of output.",
-                "Used a plugin to convert Twine into JS friendly JSON.",
-                "Built a parser to convert Twine into a tsv that worked within the app."
-            ]
-        },
-        {
-            "title": "Skills Developed",
-            "description": null,
-            "list": [
-                "Rapid Prototyping",
-                "Writing and Storyboarding a Multiple Path Story",
-                "Built a Parser to Convert Twine to JSON.",
-                "Github Collaboration, Project Management, and Issue Tracking"
-            ]
-        }
-    ],
-    "links": [
-        {
-            "type": "fa fa-github",
-            "description": "Project Repository",
-            "link": "https://github.com/GreatGrandmaGames/You-Up/"
-        },
-        {
-            "type": "fa fa-github",
-            "description": "Parser",
-            "link": "https://github.com/GreatGrandmaGames/You-Up/tree/master/Story/Parser"
-        }
-    ],
-    "images": [
-        "youup.png"
-    ],
-    "skills":["javascript"]
-},
-{
-    "_id": {
         "$oid": "5ca3c185fb6fc01d565fa006"
     },
+    "school":true,
     "name": "Space Arrow VR",
     "blurb": "A Unity 3D VR prototype.",
     "slug": "spacearrowvr",
@@ -365,6 +310,7 @@
     "_id": {
         "$oid": "5ca3c04bfb6fc01d565f9efc"
     },
+    "school":true,
     "name": "Kirby Cooking",
     "blurb": "Cook with Kirby! Make Burgers!",
     "slug": "kirby",
@@ -453,4 +399,5 @@
         "expressions-sc.png"
     ],
     "skills":["github", "c#", "unity"]
-}]
+}
+]
