@@ -1,5 +1,9 @@
+import GatsbyImage from "gatsby-image";
+
 export interface ImageProps {
-    fileName : string;
+    fileName? : string;
+    fluid? : any; 
+    //TODO : Find Fluid Type
     altText : string;
 }
 

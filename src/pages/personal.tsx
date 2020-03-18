@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, CardDeck, Card } from 'react-bootstrap';
 import '../pageStyles/indexStyles.css';
 import Layout from '../components/globalComponents/layout';
 import ProjectCard from '../components/layoutComponents/projectIndexCard';
-import Gallery from '../components/templates/gallery/gallery';
-import {useStaticQuery, graphql} from 'gatsby';
-
-import CenteredTitle from '../components/layoutComponents/centeredTitle';
+import PersonalPageQuery from '../components/query/personalPageQuery';
 
 const Personal = ({children}) => {
     
@@ -29,7 +26,7 @@ const Personal = ({children}) => {
                 />
                 <ProjectCard 
                     title="Portfolio Website at carlos-michael.com"
-                    blurb="The site you're on right now! A portfolio website built using Gatsby, React, and GraphQL. This is the 4th (!) time I have rebuilt my website from scratch, and I always use it as a way to learn a new stack. Follow along development with the repository link below!"
+                    blurb="The site you're on right now! A portfolio website built using Gatsby, React, and GraphQL. This is the 4th time I have rebuilt my website from scratch, and I always use it as a way to learn a new stack. Follow along development with the repository link below!"
                     imageName = "gatsby-stack.png"
                     mutedText="Currently in active development."
                     cardLink={{displayName : "GH Project in Repo", href:"https://github.com/cmr624/gatsby-portfolio-site/projects/1"}}
@@ -42,6 +39,10 @@ const Personal = ({children}) => {
                     mutedText="Currently in active development."
                 />
             </CardDeck>
+            <Container>
+                <h1 style={{textAlign:"center"}}>Past Projects</h1>
+                <PersonalPageQuery/>
+            </Container>
         </Layout>
             
         
