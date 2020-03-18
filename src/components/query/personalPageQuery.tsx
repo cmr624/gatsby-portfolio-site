@@ -45,24 +45,19 @@ const PersonalPageQuery = () => {
       }
     }
   `);
-  let images = mutateNodes(data.allImageSharp.edges);
-  
-
-
+  let images = fixNodes(data.allImageSharp.edges);
   let games = data.allGamesJson.edges;
   let gameProps = createGameCards(games, images);
-
   let web = data.allWebdevJson.edges;
   let webCards : Array<GalleryItemProps> = createWebCards(web, images);
-
-  let allProps = [];
-  webCards.forEach((e) => {allProps.push(e)});
-  gameProps.forEach((e) => {allProps.push(e)});
-  return (<Gallery allGalleryItemProps={allProps}/>);
+  // let allProps = [];
+  // webCards.forEach((e) => {allProps.push(e)});
+  // gameProps.forEach((e) => {allProps.push(e)});
+  return (<Gallery allGalleryItemProps={webCards.concat(gameProps)}/>);
 }
 
 function createGameCards(rawQueryData, images : Array<any>){
-  let data = mutateNodes(rawQueryData);
+  let data = fixNodes(rawQueryData);
   let galleryItemProps : Array<GalleryItemProps> = [];
   data.forEach((e) => {
     if (e.school === null){
@@ -80,7 +75,7 @@ function createGameCards(rawQueryData, images : Array<any>){
 }
 
 function createWebCards(rawQueryData, images: Array<any>){
-  let data = mutateNodes(rawQueryData);
+  let data = fixNodes(rawQueryData);
   let galleryItemProps : Array<GalleryItemProps>= [];
   data.forEach((e) => {
     if (e.name === "Clarify") {
@@ -99,7 +94,7 @@ function createWebCards(rawQueryData, images: Array<any>){
 }
 
 
-function mutateNodes(rawQueryData): Array<any>{
+function fixNodes(rawQueryData): Array<any>{
   let arr = [];
   rawQueryData.forEach((e) => {
     arr.push(e.node);

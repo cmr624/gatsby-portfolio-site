@@ -40,7 +40,7 @@ const Personal = ({children}) => {
                 />
             </CardDeck>
             <Container>
-                <h1>Gallery</h1>
+                <h1 style={{textAlign:"center"}}>Past Projects</h1>
                 <PersonalPageQuery/>
             </Container>
         </Layout>
