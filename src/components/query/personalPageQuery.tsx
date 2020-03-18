@@ -13,6 +13,9 @@ const PersonalPageQuery = () => {
             slug
             blurb
             images
+            links{
+              link
+            }
           }
         }
       }
@@ -63,11 +66,13 @@ function createGameCards(rawQueryData, images : Array<any>){
   let galleryItemProps : Array<GalleryItemProps> = [];
   data.forEach((e) => {
     if (e.school === null){
-      console.log(e);
+      console.log(e.links);
       galleryItemProps.push({
         title:e.name,
         blurb:e.blurb,
-        images:[{fluid:images.find(x => x.fluid.originalName === e.images[0]).fluid, altText:e.images[0]}]
+        images:[{fluid:images.find(x => x.fluid.originalName === e.images[0]).fluid, altText:e.images[0]}],
+        ctaURL:e.links[0].link,
+        callToActionButtonTitle:"More info"
       })
     }
   })
@@ -80,7 +85,13 @@ function createWebCards(rawQueryData, images: Array<any>){
   data.forEach((e) => {
     if (e.name === "Clarify") {
       let imageFluid = images.find(e => e.fluid.originalName === "clarifyPrev.png");
-      galleryItemProps.push({title : e.name, blurb:e.blurb, images:[{ fluid:imageFluid.fluid, altText:"Clarify"}]});
+      galleryItemProps.push(
+        {
+          title : e.name, blurb:e.blurb, 
+          images:[{ 
+            fluid:imageFluid.fluid, 
+            altText:"Clarify"}],
+          });
     }
   })
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
-import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card, CardDeck} from 'react-bootstrap';
+import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card, CardDeck, Button} from 'react-bootstrap';
 import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
 import Img from "gatsby-image"
@@ -72,6 +72,7 @@ export interface GalleryItemProps {
     blurb : string;
     images : Array<ImageProps>;
     callToActionButtonTitle?:string
+    ctaURL?:string
 }
 
 //gallery state
@@ -141,7 +142,11 @@ export class Gallery extends Component {
 
 
     render() {
-        let allCards = this.state.currentItems.map((e : CarouselIndexItemProps) => {
+        let allCards = this.state.currentItems.map((e : GalleryItemProps) => {
+            let link;
+            if (e.callToActionButtonTitle && e.ctaURL) {
+            link = (<Button style={{maxWidth : '200px', margin:'auto',marginBottom:"15px"}}href={e.ctaURL}variant="info">{e.callToActionButtonTitle}</Button>)
+            }
             return (
                 <Card style={{maxWidth:"30%"}}>
                     <Container style={{width: '100%',height:'200px' }}>
@@ -155,6 +160,7 @@ export class Gallery extends Component {
                             {e.blurb}
                         </Card.Text>
                     </Card.Body>
+                    {link}
                 </Card>
             )    
         });
