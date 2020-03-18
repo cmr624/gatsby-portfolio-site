@@ -148,9 +148,9 @@ export class Gallery extends Component {
             link = (<Button style={{maxWidth : '200px', margin:'auto',marginBottom:"15px"}}href={e.ctaURL}variant="info">{e.callToActionButtonTitle}</Button>)
             }
             return (
-                <Card style={{maxWidth:"30%"}}>
+                <Card style={{maxWidth:"300px"}}>
                     <Container style={{width: '100%',height:'200px' }}>
-                        <Img fluid={e.images[0].fluid} style={{position:'relative', top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
+                        <Img fluid={e.images[0].fluid} style={{position:'relative', margin:"10px", top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
                     </Container>
                     <Card.Body>
                         <Card.Title>
