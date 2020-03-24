@@ -49,7 +49,9 @@ export interface GalleryItemProps {
     blurb : string;
     images : Array<ImageProps>;
     callToActionButtonTitle?:string
-    ctaURL?:string
+    ctaURL?:string;
+    course?:string;
+    semester?:string;
 }
 
 //gallery state
@@ -122,10 +124,20 @@ export class Gallery extends Component {
         let allCards = this.state.currentItems.map((e : GalleryItemProps) => {
             let link;
             if (e.callToActionButtonTitle && e.ctaURL) {
-            link = (<Button style={{maxWidth : '200px', margin:'auto',marginBottom:"15px"}}href={e.ctaURL}variant="info">{e.callToActionButtonTitle}</Button>)
+                link = (<Button style={{maxWidth : '200px', margin:'auto',marginBottom:"15px"}}href={e.ctaURL}variant="info">{e.callToActionButtonTitle}</Button>)
+            }
+            let classInfo;
+            if (e.course && e.semester) {
+                classInfo = (<Card.Header style={{fontSize:"12px", textAlign:"center", maxHeight: "60px"}}>
+                    <p style={{whiteSpace:"nowrap"}}>
+                        {e.course}<br/>
+                        <p style={{fontStyle:"italic"}}>{e.semester}</p>
+                    </p>
+                </Card.Header>)
             }
             return (
                 <Card style={{maxWidth:"300px"}}>
+                    {classInfo}
                     <Container style={{width: '100%',height:'200px' }}>
                         <Img fluid={e.images[0].fluid} style={{position:'relative', margin:"10px", top:'50%', transform:"translateY(-50%)", objectFit:"contain", maxHeight:"100%", maxWidth:"100%"}}/>
                     </Container>

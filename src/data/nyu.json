@@ -1,0 +1,177 @@
+[
+    {
+        "_id": {
+            "$oid": "5c97ce1ee7179a0e408c0d0d"
+        },
+        "course":"DevOps and Agile Software Development",
+        "semester":"Spring 2019",
+        "name": "Restaurant Finder",
+        "blurb": "A Restaurant Finder app build for Agile Software at NYU.",
+        "credits": "By Carlos-Michael Rodriguez, Will Powers, Roy Lee, Nathalia Lin",
+        "slug": "/webdev/agile-project",
+        "imgLink": "agile.jpg",
+        "images": ["agile.jpg"],
+        "sections": [
+            {
+                "title": "Project Description",
+                "description": "Created for Devops and Agile Software Engineering, this is a semester-long project built using the M.E.R.N. stack. The app is intended to be a new way to interact with your favorite restaurants in New York. The primary purpose of the development of the app was to learn Agile software methodologies, including SCRUM, test-driven development, continuous integration, and more.",
+                "list": null
+            },
+            {
+                "title": "Technologies Used",
+                "description": null,
+                "list": [
+                    "Node JS",
+                    "Mongo DB",
+                    "React",
+                    "HTML5 + CSS3",
+                    "Passport",
+                    "Express",
+                    "GitHub",
+                    "Travis Continuous Integration",
+                    "GitHub Project Management",
+                    "SCRUM Agile Methodology"
+                ]
+            },
+            {
+                "title": "More Information",
+                "description": "We want to implement the overall functionality of finding restaurants based on different constraints including but not limited to location, price and cuisine type. Additional features could include randomly generating compatible restaurants and a personalized social network for sharing cuisines, ratings, coupons, deals and recommendations with friends. This app is for people with a time crunch looking for a bite to eat. People can get a restaurant they know they'll like before they even read the reviews based on the filtering services, friend's recommendations, or convenience by location.",
+                "list": null
+            }
+        ],
+        "links": [
+            {
+                "type": "GitHub",
+                "description": "GitHub Repository",
+                "link": "https://github.com/nyu-software-engineering/restaurant-finder"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "5ca3c04bfb6fc01d565f9efc"
+        },
+        "course":"Interactive Computing",
+        "semester":"Spring 2018",
+        "name": "Kirby Cooking",
+        "blurb": "Cook with Kirby! Make Burgers!",
+        "slug": "kirby",
+        "playURL": "https://github.com/cmr624",
+        "gifURL": "kirbyplay.gif",
+        "credits": "Developed and designed by Carlos-Michael Rodriguez and Jevons Wang",
+        "sections": [
+            {
+                "title": "Project Description",
+                "description": "Using Javascript and P5.js, we created 'Kirby & the Amazing Burgers' for our Midterm project in Craig Kapp's Interactive Computing class. This class was the final class counting towards my web programming minor.",
+                "list": null
+            },
+            {
+                "title": "Skills Developed",
+                "description": null,
+                "list": [
+                    "Scoping a Prototype",
+                    "2D Pixelart Animation using Pre-made Gifs",
+                    "Javascript",
+                    "P5.js",
+                    "Polish with Art and Music"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "type": "fa fa-youtube",
+                "description": "Playthrough on YouTube",
+                "link": "https://www.youtube.com/embed/aaHgj1Xjmw8"
+            }
+        ],
+        "images": [
+            "kirby.png"
+        ],
+        "skills":["html", "css","github", "javascript"]
+    },
+    {
+        "_id": {
+            "$oid": "5ca3c185fb6fc01d565fa006"
+        },
+        "course":"Computer Graphics",
+        "semester":"Spring 2018",
+        "name": "Space Arrow VR",
+        "blurb": "A Unity 3D VR prototype.",
+        "slug": "spacearrowvr",
+        "playURL": "https://github.com/cmr624",
+        "gifURL": "graphicsfinalgif.gif",
+        "sections": [
+            {
+                "title": "Project Description",
+                "description": "Our final project for Ken Perlin's Computer Graphics Class. Made in Unity for the HTC Vive, our team created a VR minigame where gravity affects the trajectory of arrows to score trick shots on targets. Different planetary bodies have different masses, which means arrows you shoot towards the orbit of different planets will allow the arrow to curve and bend in fun, unique, and interesting ways.",
+                "list": null
+            },
+            {
+                "title": "Skills Developed",
+                "description": null,
+                "list": [
+                    "Unity VR",
+                    "Unity 3D",
+                    "Steam VR",
+                    "Coding / Managing VR Controls"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "type": "fa fa-github",
+                "description": "Project Repository",
+                "link": "https://github.com/GreatGrandmaGames/GraphicsFinal"
+            }
+        ],
+        "images": [
+            "spaceVR.png"
+        ],
+        "skills":["vr", "github", "c#", "unity"]
+    },
+    {
+        "_id": {
+            "$oid": "5ca3c078fb6fc01d565f9f16"
+        },
+        "course":"Intro to Game Development",
+        "semester":"Fall 2018",
+        "name": "The Kitchen",
+        "blurb": "A prototype for a cooking game.",
+        "slug": "thekitchen",
+        "playURL": "https://cmr624.itch.io/kitchen-assignment-3",
+        "gifURL": "kitchengif480speedup.gif",
+        "sections": [
+            {
+                "title": "Project Description",
+                "description": "A semester long-project in 'Introduction to Game Development' taken at the NYU Game Center. The assignment was to produce a fully playable Prototype in Unity 2D by the end of the semester.",
+                "list": null
+            },
+            {
+                "title": "Skills Learned",
+                "description": null,
+                "list": [
+                    "Scoping a Prototype",
+                    "Basic 2D Pixelart Animation and Art Generation",
+                    "Unity 2D Animation Timing",
+                    "Unity 2D Classes in C#"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "type": "fa fa-github",
+                "description": "Project Repository",
+                "link": "https://github.com/cmr624/kitchen_prototype"
+            },
+            {
+                "type": "fa fa-gamepad",
+                "description": "Play now!",
+                "link": "https://cmr624.itch.io/kitchen-assignment-3"
+            }
+        ],
+        "images": [
+            "kitchenindex.png"
+        ],
+        "skills":["unity", "c#", "github"]
+    }
+]
