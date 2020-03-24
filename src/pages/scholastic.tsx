@@ -63,6 +63,7 @@ const Scholastic = () => {
       pContent="Since August 2019, I have been working as a game developer making educational games for Scholastic. Responsibilities include building and designing games from the ground up according to educational standards and requirements from the classroom magazines editorial team, building solutions for workflow and game performance issues, and building out additional web content for the digital team."
     />
   <Container>
+  <h1 style={{textAlign:"center"}}>Games Gallery</h1>
   <Gallery
     allGalleryItemProps={props}
   />
