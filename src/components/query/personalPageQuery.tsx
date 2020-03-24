@@ -61,7 +61,7 @@ function createGameCards(rawQueryData, images : Array<any>){
   let galleryItemProps : Array<GalleryItemProps> = [];
   data.forEach((e) => {
     if (e.school === null){
-      console.log(e.links);
+      // console.log(e.links);
       galleryItemProps.push({
         title:e.name,
         blurb:e.blurb,
