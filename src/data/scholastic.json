@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Train Builder",
+        "blurb":"Build trans with mixed number values, by using cars with specific fractions!",
+        "image":"train.png"
+    },
+    {
+        "name":"Find the Groundhog!",
+        "blurb":"An early childhood sight words game. Answer the questions correctly and feed the hungry groundhog!",
+        "image":"groundhog.png"
+    },
+    {
+        "name":"Pizza Pie Fractions",
+        "blurb":"A math game about slicing pizzas as the denominator, and topping them as the numerator, and feeding your hungry guests!",
+        "image":"pizza.png"
+    },
+    {
+        "name":"Caleb's Math Mystery!",
+        "blurb":"Built in Phaser 3, solve the mystery of the missing footprints by exploring Caleb's house and answering math questions!",
+        "image":"caleb.png"
+    },
+    {
+        "name":"Comparison Maze",
+        "blurb":"A Pac-Man like game, where your direction in the maze changes the inequality sign. Navigate the maze and score correct inequalities!",
+        "image":"maze.png"
+    },
+    {
+        "name":"Go, Ducks, Go!",
+        "blurb":"In this early childhood grammar game, follow a group of ducklings to their mother through Brooklyn!",
+        "image":"duck.png"
+    },
+    {
+        "name":"Blackfooted Cat",
+        "blurb":"In this early childhood punctuation game, find the mysterious blackfooted cat, and help them reconnect with their family!",
+        "image":"cat.png"
+    }
+] 

@@ -1,32 +1,9 @@
 import React, { Component } from 'react';
-import CarouselIndexItem, {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
+import {CarouselIndexItemProps} from '../gallery/carouselIndexItem';
 import {Row, Col, Container, InputGroup, FormControl, CardGroup, Card, CardDeck, Button} from 'react-bootstrap';
-import QueryImage from '../../globalComponents/image';
 import { ImageProps } from '../../utils/dataTypes';
 import Img from "gatsby-image"
-import { FaSortButton, FaToggleButtonGroup, IconProps } from '../../layoutComponents/fa-icons';
-// const allGamesQuery = useStaticQuery(graphql`
-//     {
-//         allGamesJson {
-//             edges {
-//                 node {
-//                 name
-//                 images
-//                 blurb
-//                 }
-//             }
-//         }
-//     }
-//     `);
-//     let galleryProps = [];
-//     allGamesQuery.allGamesJson.edges.forEach((nodeObj, i) => {
-//         nodeObj.node.images = nodeObj.node.images.map((e) => {return {fileName : e, altText : "alternateText"}})
-//         galleryProps.push({title:nodeObj.node.name, blurb:nodeObj.node.blurb, images:nodeObj.node.images});
-//       }); 
-// in render  = <Container>
-//                 <CenteredTitle h1Content="Personal Projects Gallery" pContent="Search projects by title or description, and sort by skill or technology used!"/>
-//                 <Gallery allGalleryItemProps={galleryProps}/>
-//             </Container> 
+import { FaToggleButtonGroup, IconProps } from '../../layoutComponents/fa-icons';
 
 interface SortBarProps {}
 
