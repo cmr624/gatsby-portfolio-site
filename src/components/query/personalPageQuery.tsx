@@ -94,7 +94,7 @@ function createWebCards(rawQueryData, images: Array<any>){
 }
 
 
-function fixNodes(rawQueryData): Array<any>{
+export function fixNodes(rawQueryData): Array<any>{
   let arr = [];
   rawQueryData.forEach((e) => {
     arr.push(e.node);
