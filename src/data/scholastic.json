@@ -11,12 +11,12 @@
     },
     {
         "name":"Pizza Pie Fractions",
-        "blurb":"A math game about slicing pizzas as the denominator, and topping them as the numerator, and feeding your hungry guests!",
+        "blurb":"A math game about slicing pizzas as the denominator, topping them as the numerator, and feeding your hungry guests!",
         "image":"pizza.png"
     },
     {
         "name":"Caleb's Math Mystery!",
-        "blurb":"Built in Phaser 3, solve the mystery of the missing footprints by exploring Caleb's house and answering math questions!",
+        "blurb":"Built in Phaser 3, solve the mystery of the muddy footprints by exploring Caleb's house and answering math questions!",
         "image":"caleb.png"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
         "name":"Go, Ducks, Go!",
-        "blurb":"In this early childhood grammar game, follow a group of ducklings to their mother through Brooklyn!",
+        "blurb":"In this early childhood grammar game, follow a group of ducklings through their adventure in Brooklyn!",
         "image":"duck.png"
     },
     {
