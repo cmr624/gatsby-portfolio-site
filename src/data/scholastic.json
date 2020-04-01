@@ -30,6 +30,11 @@
         "image":"duck.png"
     },
     {
+        "name":"Alphabet Bubble Pop",
+        "blurb":"In this early childhood letter sight game, pop bubbles with the correct letter!",
+        "image":"bubbles.png"
+    },
+    {
         "name":"Blackfooted Cat",
         "blurb":"In this early childhood punctuation game, find the mysterious blackfooted cat, and help them reconnect with their family!",
         "image":"cat.png"
