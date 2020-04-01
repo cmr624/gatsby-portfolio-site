@@ -1,9 +1,5 @@
 [
-    {
-        "name":"Train Builder",
-        "blurb":"Build trains with mixed number values, by using cars with specific fractions!",
-        "image":"train.png"
-    },
+    
     {
         "name":"Find the Groundhog!",
         "blurb":"An early childhood sight words game. Answer the questions correctly and feed the hungry groundhog!",
@@ -23,6 +19,16 @@
         "name":"Comparison Maze",
         "blurb":"A Pac-Man like game, where your direction in the maze changes the inequality sign. Navigate the maze and score correct inequalities!",
         "image":"maze.png"
+    },
+    {
+        "name":"Train Builder",
+        "blurb":"Build trains with mixed number values, by using cars with specific fractions!",
+        "image":"train.png"
+    },
+    {
+        "name":"Alphabet Bubble Pop",
+        "blurb":"In this early childhood letter sight game, pop bubbles with the correct letter!",
+        "image":"bubbles.png"
     },
     {
         "name":"Go, Ducks, Go!",
