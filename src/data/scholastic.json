@@ -1,9 +1,5 @@
 [
-    {
-        "name":"Train Builder",
-        "blurb":"Build trains with mixed number values, by using cars with specific fractions!",
-        "image":"train.png"
-    },
+    
     {
         "name":"Find the Groundhog!",
         "blurb":"An early childhood sight words game. Answer the questions correctly and feed the hungry groundhog!",
@@ -25,14 +21,19 @@
         "image":"maze.png"
     },
     {
-        "name":"Go, Ducks, Go!",
-        "blurb":"In this early childhood grammar game, follow a group of ducklings through their adventure in Brooklyn!",
-        "image":"duck.png"
+        "name":"Train Builder",
+        "blurb":"Build trains with mixed number values, by using cars with specific fractions!",
+        "image":"train.png"
     },
     {
         "name":"Alphabet Bubble Pop",
         "blurb":"In this early childhood letter sight game, pop bubbles with the correct letter!",
         "image":"bubbles.png"
+    },
+    {
+        "name":"Go, Ducks, Go!",
+        "blurb":"In this early childhood grammar game, follow a group of ducklings through their adventure in Brooklyn!",
+        "image":"duck.png"
     },
     {
         "name":"Blackfooted Cat",
