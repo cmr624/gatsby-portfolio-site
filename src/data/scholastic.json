@@ -31,6 +31,11 @@
         "image":"bubbles.png"
     },
     {
+        "name":"Ice Cream Patterns",
+        "blurb":"In this early childhood patterns game, build an ice cream cone with the right pattern!",
+        "image":"icecream.png"
+    },
+    {
         "name":"Go, Ducks, Go!",
         "blurb":"In this early childhood grammar game, follow a group of ducklings through their adventure in Brooklyn!",
         "image":"duck.png"
