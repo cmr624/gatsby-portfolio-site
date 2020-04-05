@@ -61,7 +61,6 @@ function createGameCards(rawQueryData, images : Array<any>){
   let galleryItemProps : Array<GalleryItemProps> = [];
   data.forEach((e) => {
     if (e.school === null){
-      // console.log(e.links);
       galleryItemProps.push({
         title:e.name,
         blurb:e.blurb,
@@ -87,6 +86,19 @@ function createWebCards(rawQueryData, images: Array<any>){
             fluid:imageFluid.fluid, 
             altText:"Clarify"}],
           });
+    } else if (e.name === "Gatsby Portfolio Site")
+    {
+      let imageFluid = images.find(e => e.fluid.originalName === "gatsby-stack.png");
+      galleryItemProps.push({
+        title : e.name, 
+        blurb : e.blurb,
+        images:[{
+          fluid:imageFluid.fluid,
+          altText:"Gatsby Stack"
+        }],
+        ctaURL:e.links[0].link,
+        callToActionButtonTitle:"Repository"
+      })
     }
   })
 

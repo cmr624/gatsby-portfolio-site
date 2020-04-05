@@ -2,6 +2,30 @@
     "_id": {
         "$oid": "5c969a47e7179a0e408bcbc2"
     },
+    "name": "Gatsby Portfolio Site",
+    "credits": "Developed and Designed by Carlos-Michael",
+    "blurb": "A portfolio website built with Gatsby, React, and GraphQL. (You're on it right now!)", 
+    "slug": "/webdev/portfolio",
+    "imgLink": "gatsby-stack.png",
+    "images": [
+
+    ],
+    "sections": [
+        
+    ],
+    "links": [
+        {
+            "type": "",
+            "description": "GH Project in Repo",
+            "link": "https://github.com/cmr624/gatsby-portfolio-site/projects/1"
+        }
+    ]
+},
+    
+    {
+    "_id": {
+        "$oid": "5c969a47e7179a0e408bcbc2"
+    },
     "name": "carlos-michael.com",
     "credits": "Developed and Designed by Carlos-Michael",
     "blurb": "A portfolio website built with a full MERN stack.",
