@@ -18,25 +18,25 @@ const Personal = ({children}) => {
             </Container>
             <CardDeck style={{padding:'15px'}}>
                 <ProjectCard 
-                    title="Phaser Typescript Library and Game Template"
-                    blurb="An open source library of gameplay scripts and patterns used in Phaser 3, written in Typescript and ES6. Library included as a submodule in Webpack and Typescript game template." 
-                    imageName="phaser-webpack.png"
+                    title="CatLikeCoding - Unity Hex Map Tutorial"
+                    blurb="An in depth tutorial series on a Hex Map in Unity3D by that I am following along and implementing."
+                    imageName = "hex-tutorial.png"
                     mutedText="Currently in active development."
-                    cardLink={{displayName:"Repository", href:"https://github.com/cmr624/cm-phaser-library"}}
-                />
-                <ProjectCard 
-                    title="Portfolio Website at carlos-michael.com"
-                    blurb="The site you're on right now! A portfolio website built using Gatsby, React, and GraphQL. This is the 4th time I have rebuilt my website from scratch, and I always use it as a way to learn a new stack. Follow along development with the repository link below!"
-                    imageName = "gatsby-stack.png"
-                    mutedText="Currently in active development."
-                    cardLink={{displayName : "GH Project in Repo", href:"https://github.com/cmr624/gatsby-portfolio-site/projects/1"}}
-                    // style={{maxHeight:'200px'}}
+                    cardLink={{displayName : "Repository", href:"https://github.com/cmr624/unity-hex"}}
+                    style={{marginBottom:"30px"}}
                 />
                 <ProjectCard 
                     title="Three Letters Puzzle Game"
                     blurb="A small puzzle game about putting three words together! Get seven random letters, and see how they fit. Each word ends with the letter that the next word begins with! Prototype in Phaser 3 and Typescript, looking to port to Unity!"
                     imageName="three-letters.png"
                     mutedText="Currently in active development."
+                />
+                <ProjectCard 
+                    title="Phaser Typescript Library and Game Template"
+                    blurb="An open source library of gameplay scripts and patterns used in Phaser 3, written in Typescript and ES6. Library included as a submodule in Webpack and Typescript game template." 
+                    imageName="phaser-webpack.png"
+                    mutedText="In backlog, may come back to it with Phaser 4."
+                    cardLink={{displayName:"Repository", href:"https://github.com/cmr624/cm-phaser-library"}}
                 />
             </CardDeck>
             <Container>
