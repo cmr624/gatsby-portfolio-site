@@ -21,6 +21,11 @@
         "image":"maze.png"
     },
     {
+        "name":"Ice Cream Change",
+        "blurb":"Get a random flavor of ice cream, and count the correct change to pay for it!",
+        "image":"dyna-icecream.png"
+    },
+    {
         "name":"Train Builder",
         "blurb":"Build trains with mixed number values, by using cars with specific fractions!",
         "image":"train.png"
