@@ -10,26 +10,14 @@
   Project Bootstrapped from Gatsby's default starter
 </h1>
 
-## Details
+# Link
 
-Developed as the 4th web app version of my portfolio website, I always like to build a new website while learning new tools. This is my first time using Gatsby and GraphQL on a project, so I am learning as I am developing. You can find the previous versions of my website on my GitHub profile.
+[link](https://www.carlos-michael.com)
 
 ## Features
 
 1. Lazy Loading for Images
-2. Built in Typescript support
+2. Typescript
 3. Programmatic pages built from GraphQL queries
+4. Gallery Component (indexes)
 
-## Coming Soon
-
-1. Gallery Component (indexes)
-2. Individual Project pages 
-
-## Feedback Wanted
-
-Since this is a learning experience for me, if anyone is interested in reaching out with code contributions or recommendations for patterns I should be using, please do!
-
-For example, I am particularly confused about how to best query lazy-loaded `gatsby-image` components, as I could only think of the following:
-
-1. Hard coding every query for every picture type, since you can't use string interpolation in `useStaticQuery`
-2. Query-ing all images and just picking the right one to fill the component with (this is what I currently do, using `array.find`)
