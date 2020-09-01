@@ -75,6 +75,7 @@ export class Gallery extends Component {
         }
     }
 
+
     //on change for search bar, searchable by title
     onChange = (e : React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.value === "") {

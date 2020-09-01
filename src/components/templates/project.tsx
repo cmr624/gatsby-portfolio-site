@@ -3,6 +3,7 @@ import './project.css';
 import { StandardProjectData } from '../utils/dataTypes';
 import { Container } from 'react-bootstrap';
 import Layout from '../globalComponents/layout';
+
 export default (data) => {
     let meta : StandardProjectData = {...data.pageContext.node};
     return (
