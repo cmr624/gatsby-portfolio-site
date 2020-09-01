@@ -1,5 +1,9 @@
 [
-    
+    {
+        "name":"Jewel Maker",
+        "blurb":"A place value addition game about jewels.",
+        "image":"jewels.png"
+    },
     {
         "name":"Find the Groundhog!",
         "blurb":"An early childhood sight words game. Answer the questions correctly and feed the hungry groundhog!",
