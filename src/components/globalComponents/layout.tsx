@@ -29,11 +29,13 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `);
-
+  `);    
+  
   let arr = data.allDataJson.edges[1].node.arr;
-
-  let e : string = arr[getRandomIntInclusive(0, arr.length - 1)];
+  let e : string;
+  if (arr !== null) {
+    e = arr[getRandomIntInclusive(0, arr.length - 1)];
+  }
 
   return (
     <>
