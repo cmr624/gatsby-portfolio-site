@@ -10,14 +10,3 @@
   Project Bootstrapped from Gatsby's default starter
 </h1>
 
-# Link
-
-[link](https://www.carlos-michael.com)
-
-## Features
-
-1. Lazy Loading for Images
-2. Typescript
-3. Programmatic pages built from GraphQL queries
-4. Gallery Component (indexes)
-

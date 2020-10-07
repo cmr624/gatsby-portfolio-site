@@ -20,9 +20,20 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
         }
+      },
+      allDataJson {
+        edges {
+          node {
+            arr
+          }
+        }
       }
     }
-  `)
+  `);
+
+  let arr = data.allDataJson.edges[1].node.arr;
+
+  let e : string = arr[getRandomIntInclusive(0, arr.length - 1)];
 
   return (
     <>
@@ -36,9 +47,17 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <Container className="mx auto">
-        <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold"}}>
-        Programmed by Carlos-Michael <br/>with Gatsby.js, GraphQL, React, and Typescript.
-        <br/> Find the repository <a href="https://github.com/cmr624/gatsby-portfolio-site">here!</a>
+        <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold", maxWidth:'300px', margin:'auto'}}>
+        { 
+          e.split(' ').map((ele, i) => {
+            if (ele.indexOf('\n') >= 0){
+              return (<>{ele}<br></br></>)
+            }
+            else {
+              return ele + " ";
+            }
+          })
+        } 
         </footer>
         </Container>
         
@@ -52,3 +71,9 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive 
+}
