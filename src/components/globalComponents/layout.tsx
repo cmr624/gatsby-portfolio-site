@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.dataJson.siteMetadata.title} />
+      <Header siteTitle="CM"/>
       <div
         style={{
           margin: `0 auto`,
