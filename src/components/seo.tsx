@@ -11,21 +11,30 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const site = useStaticQuery(
-    graphql`
-      query MyQuery {
-        dataJson {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
+  // const site = useStaticQuery(
+  //   graphql`
+  //     query MyQuery {
+  //       dataJson {
+  //         siteMetadata {
+  //           title
+  //           description
+  //           author
+  //         }
+  //       }
+  //     }
       
-    `
-  )
+  //   `
+  // )
 
+  const site = {
+    "dataJson":{
+      "siteMetadata": {
+        "title": "CM",
+        "description": "Carlos Michael Rodriguez Portfolio Website, built with React, Typescript, GraphQL, and GatsbyJS.",
+        "author": "@cmr624"
+      }
+    }
+  };
   const metaDescription = description || site.dataJson.siteMetadata.description
 
   return (
