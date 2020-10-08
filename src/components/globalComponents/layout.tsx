@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
     }
   `);    
   
-  let arr = data.allDataJson.edges[1].node.arr;
+  let arr = data.allDataJson.edges[0].node.arr;
   let e : string;
   if (arr !== null) {
     e = arr[getRandomIntInclusive(0, arr.length - 1)];
@@ -51,14 +51,14 @@ const Layout = ({ children }) => {
         <Container className="mx auto">
         <footer style={{textAlign:'center', fontFamily:"Avenir", fontWeight:"bold", maxWidth:'300px', margin:'auto'}}>
         { 
-          e.split(' ').map((ele, i) => {
+          (e !== undefined) ? e.split(' ').map((ele, i) => {
             if (ele.indexOf('\n') >= 0){
               return (<>{ele}<br></br></>)
             }
             else {
               return ele + " ";
             }
-          })
+          }) : "no footer data" 
         } 
         </footer>
         </Container>
