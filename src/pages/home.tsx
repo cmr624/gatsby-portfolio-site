@@ -16,8 +16,8 @@ const Home = () => {
           <Col xs={12} md={7} className = "justHeader">
               <h1>Carlos Michael</h1>
               <div className="right-side">
-                <h2>game producer @ noggin</h2>
-                <h2>game developer</h2>
+                <h2>game producer @ nickelodeon</h2>
+                <h2>working on early childhood educational games</h2>
                 <h2>nyc</h2>
               </div>
           </Col>
